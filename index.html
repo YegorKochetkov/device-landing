@@ -5,23 +5,28 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+
     <header class="main_header">
       <div class="container">
-        <div class="logo">
-          <h1><a>Device</a></h1>
+        <div class="header_logo">
+          <a class="logo">Device</a>
         </div>
-        <div class="search">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-        </div>
+
+        <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <label for="search">Найти</label>
+
         <div class="user_block">
           <a class="login" href="#">Войти</a>
         </div>
+
         <div class="comparison">
           <a href="#">Сравнить</a>
         </div>
+
         <div class="cart">
           <a href="#">Корзина</a>
         </div>
+
         <nav class="main_navigation">
           <ul class="catalog_list">
             <li><a href="#">Каталог товаров</a>
@@ -45,21 +50,22 @@
           <a class="warranty" href="#">Гарантия</a>
           <a class="contacts" href="#">Контакты</a>
         </nav>
-        <div class="decor_element"></div>
       </div>
     </header>
+
     <main class="container">
       <div class="promo_slider">
         <input type="radio" id="promo_btn_1" name="toggle" checked>
         <input type="radio" id="promo_btn_2" name="toggle">
         <input type="radio" id="promo_btn_3" name="toggle">
         <div class="slider_controls">
-          <label for="promo_btn_1"></label>
-          <label for="promo_btn_2"></label>
-          <label for="promo_btn_3"></label>
+          <label for="promo_btn_1">&bull;</label>
+          <label for="promo_btn_2">&bull;</label>
+          <label for="promo_btn_3">&bull;</label>
         </div>
         <div class="slider_inner">
           <div class="slider_slides">
+
             <article class="slider_item">
               <div class="slider_number">01</div>
               <a href="#"><img src="#" width="384" height="486" alt="selfie_stick"></a>
@@ -78,6 +84,7 @@
                 </dl>
               </div>
             </article>
+
             <article class="slider_item">
               <div class="slider_number">02</div>
               <a href="#"><img src="#" width="384" height="486" alt="fitness_bracelet"></a>
@@ -91,6 +98,7 @@
                 </dl>
               </div>
             </article>
+
             <article class="slider_item">
               <div class="slider_number">03</div>
               <a href="#"><img src="#" width="384" height="486" alt="quadrocopters"></a>
@@ -109,6 +117,7 @@
           </div>
         </div>
       </div>
+
       <div class="catalog_items">
         <div class="virtual_reality">
           <a href="#">
@@ -116,30 +125,35 @@
             <p>Виртуальная реальность</p>
           </a>
         </div>
+
         <div class="monopods">
           <a href="#">
             <img src="#" width="86" height="117" alt="Монопод для селфи">
             <p>Моноподы для селфи</p>
           </a>
         </div>
+
         <div class="action_camera">
           <a href="#">
             <img src="#" width="71" height="87" alt="Экшн-камера">
             <p>Экшн-камеры</p>
           </a>
         </div>
+
         <div class="fitness_bracelets">
           <a href="#">
             <img src="#" width="107" height="65" alt="Фитнесс браслет">
             <p>Фитнесс браслеты</p>
           </a>
         </div>
+
         <div class="smart_watches">
           <a href="#">
             <img src="#" width="56" height="98" alt="Умные часы">
             <p>Умные часы</p>
           </a>
         </div>
+
         <div class="quadrocopters">
           <a href="#">
             <img src="#" width="132" height="69" alt="Квадрокоптер">
@@ -147,6 +161,7 @@
           </a>
         </div>
       </div>
+
       <div class="services_sliders">
         <input type="radio" id="services_btn_1" name="toggle" checked>
         <input type="radio" id="services_btn_2" name="toggle">
@@ -158,18 +173,21 @@
         </div>
         <div class="slider_inner">
           <div class="slider_slides">
+
             <article class="slider_item">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               <img src="#" width="136" height="164" alt="courier">
             </article>
+
             <article class="slider_item">
               <h2>Гарантия</h2>
               <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                  Товар, не дом, конечно же.</p>
               <img src="#" width="171" height="195" alt="call_to_service">
             </article>
+
             <article class="slider_item">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -179,14 +197,15 @@
           </div>
         </div>
       </div>
+
       <div class="promo_brand">
         <a href="#"><img src="#" width="260" height="100" alt="logo"></a>
         <a href="#"><img src="#" width="260" height="100" alt="logo"></a>
         <a href="#"><img src="#" width="260" height="100" alt="logo"></a>
         <a href="#"><img src="#" width="260" height="100" alt="logo"></a>
       </div>
+
       <section class="about_us">
-        <div class="decor_element"></div>
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -197,29 +216,35 @@
         </ul>
         <a class="btn" href="#">Подробнее о нас</a>
       </section>
+
       <section class="index_contacts">
-        <div class="decor_element"></div>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
            Всякое бывает.</p>
-        <a href="#popup_map"><div class="inner_map"><img src="#" width="560" height="222" alt="Схема проезда"></div></a>
+        <div class="inner_map"><a href="#popup_map"><img src="#" width="560" height="222" alt="Схема проезда"></a></div>
         <a class="btn" href="#write_us">Напишите нам</a>
       </section>
     </main>
+
     <footer class="main_footer">
       <div class="container">
-        <div class="logo">
-          <h1><a>Device</a></h1>
+
+        <div class="footer_logo">
+          <a class="logo">Device</a>
         </div>
+
         <div class="user_block">
           <a class="login" href="#">Войти</a>
         </div>
+
         <div class="comparison">
           <a href="#">Сравнить</a>
         </div>
+
         <div class="cart">
           <a href="#">Корзина</a>
         </div>
+
         <address>г. Москва, ул. Строителей, 15</address>
         <nav class="footer_navigation">
           <a class="delivery" href="#">Доставка</a>
@@ -227,7 +252,6 @@
           <a class="contacts" href="#">Контакты</a>
         </nav>
         <div class="footer_contacts">Тел.: +7 (495) 495-95-95</div>
-        <div class="decor_element"></div>
         <div class="footer_social">
           <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
           <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
@@ -239,7 +263,7 @@
       </div>
     </footer>
   <!-- Модальное окно write us -->
-  <aside class="write_us" id="write_us">
+  <div class="write_us" id="write_us">
     <form action="#" method="post">
       <label for="client_name">Ваше имя:</label>
       <input type="text" name="name" id="client_name" placeholder="Представьтесь, пожалуйста">
@@ -250,11 +274,11 @@
       <button class="btn" type="submit">Отправить</button>
     </form>
     <a class="modal_close_btn" href="#"><img src="#" width="23" height="22" alt="Кнопка закрыть"></a>
-  </aside>
+  </div>
   <!-- Модальное окно popup_map -->
-  <aside class="popup_map" id="popup_map">
+  <div class="popup_map" id="popup_map">
     <div class="map"></div>
     <a class="modal_close_btn" href="#"><img src="#" width="23" height="22" alt="Кнопка закрыть"></a>
-  </aside>
+  </div>
   </body>
 </html>

@@ -5,16 +5,16 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+
     <header class="main_header">
       <div class="container">
-        <div class="logo">
-          <h1><a href="index.html">Device</a></h1>
+        <div class="header_logo">
+          <a class="logo" href="index.html">Device</a>
         </div>
-        <div class="search">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-        </div>
+        <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <label for="search">Найти</label>
         <div class="user_block">
-          <a class="login" href="#">Войти</a>
+          <a class="login" href="#">Валентин Петухов</a>
           <a class="logout" href="#">Выйти</a>
         </div>
         <div class="comparison">
@@ -48,13 +48,15 @@
         </nav>
       </div>
     </header>
+
     <main class="container">
       <h2 class="index_content_title">Моноподы для селфи</h2>
       <nav class="breadcrumbs">
-        <span><a href="index.html">Главная</a></span>
-        <span><a href="catalog.html">Каталог товаров</a></span>
-        <span>Моноподы для селфи</span>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог товаров</a>
+        <a class="active">Моноподы для селфи</a>
       </nav>
+
       <section class="index_content_left">
         <h3>Фильтр:</h3>
         <form class="filtr_products" action="#" method="get">
@@ -78,6 +80,7 @@
           <input class="btn" type="submit" name="show" value="Показать">
         </form>
       </section>
+
       <section class="index_content_right">
         <div class="sort">
           <h3>Сортировка:</h3>
@@ -87,13 +90,13 @@
           <span>По возрастанию</span>
           <span>По убыванию</span>
         </div>
+
         <article class="catalog_item">
           <img src="#" width="360" height="380" alt="монопод">
           <h3><a href="#">Любительская селфи-палка</a></h3>
           <div class="price">500 руб.</div>
           <a class="btn" href="#">Купить</a>
           <a class="to_compare" href="#">Добавить к сравнению</a>
-          <span class="new_item">NEW</span>
         </article>
 
         <article class="catalog_item">
@@ -102,7 +105,6 @@
           <div class="price">1 500 руб.</div>
           <a class="btn" href="#">Купить</a>
           <a class="to_compare" href="#">Добавить к сравнению</a>
-          <span class="new_item">NEW</span>
         </article>
 
         <article class="catalog_item">
@@ -111,7 +113,6 @@
           <div class="price">2 500 руб.</div>
           <a class="btn" href="#">Купить</a>
           <a class="to_compare" href="#">Добавить к сравнению</a>
-          <span class="new_item">NEW</span>
         </article>
 
         <article class="catalog_item">
@@ -120,12 +121,12 @@
           <div class="price">4 900 руб.</div>
           <a class="btn" href="#">Купить</a>
           <a class="to_compare" href="#">Добавить к сравнению</a>
-          <span class="new_item">NEW</span>
         </article>
+
         <div class="pagination">
           <button class="btn_page_prev" type="button">Назад</button>
           <ul>
-            <li>1</li>
+            <li><a class="active">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
           </ul>
@@ -133,10 +134,11 @@
         </div>
       </section>
     </main>
+
     <footer class="main_footer">
       <div class="container">
-        <div class="logo">
-          <h1><a>Device</a></h1>
+        <div class="footer_logo">
+          <a class="logo">Device</a>
         </div>
         <div class="user_block">
           <a class="logout" href="#">Выйти</a>
@@ -154,7 +156,6 @@
           <a class="contacts" href="#">Контакты</a>
         </nav>
         <div class="footer_contacts">Тел.: +7 (495) 495-95-95</div>
-        <div class="decor_element"></div>
         <div class="footer_social">
           <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
           <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
