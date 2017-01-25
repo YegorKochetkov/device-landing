@@ -5,16 +5,20 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
     <header class="main_header">
       <div class="container">
-        <a class="logo">Device</a>
-        <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
-        <label for="search">Найти</label>
-        <div class="user_block">
+        <a class="logo" href="index.html">Device</a>
+
+        <form class="search" action="#" method="get">
+          <input type="search" name="search_field" placeholder="Поиск по сайту">
+          <input type="submit" name="search_btn" value="Найти">
+        </form>
+
+          <div class="user_block">
           <a class="login" href="#">Валентин Петухов</a>
           <a class="logout" href="#">Выйти</a>
         </div>
+
         <div class="comparison">
           <a href="#">Сравнить</a>
         </div>
@@ -135,7 +139,7 @@
 
     <footer class="main_footer">
       <div class="container">
-        <a class="logo">Device</a>
+        <a class="logo" href="index.html">Device</a>
         <div class="user_block">
           <a class="logout" href="#">Выйти</a>
         </div>

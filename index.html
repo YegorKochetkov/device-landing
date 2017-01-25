@@ -10,8 +10,10 @@
       <div class="container">
         <a class="logo">Device</a>
 
-        <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">
-        <label for="search">Найти</label>
+        <form class="search" action="#" method="get">
+          <input type="search" name="search_field" placeholder="Поиск по сайту">
+          <input type="submit" name="search_btn" value="Найти">
+        </form>
 
         <div class="user_block">
           <a class="login" href="#">Войти</a>
@@ -30,7 +32,7 @@
             <li><a href="#">Каталог товаров</a>
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="catalog_monopods.html">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a>
                   <ul>
                     <li><a href="#">Фитнесс-браслеты</a></li>
@@ -125,7 +127,7 @@
         </div>
 
         <div class="monopods">
-          <a href="#">
+          <a href="catalog_monopods.html">
             <img src="#" width="86" height="117" alt="Монопод для селфи">
             <p>Моноподы для селфи</p>
           </a>
@@ -219,7 +221,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
            Всякое бывает.</p>
-        <div class="inner_map"><a href="#popup_map"><img src="#" width="560" height="222" alt="Схема проезда"></a></div>
+        <a href="#popup_map"><img src="#" width="560" height="222" alt="Схема проезда"></a>
         <a class="btn" href="#write_us">Напишите нам</a>
       </section>
     </main>
