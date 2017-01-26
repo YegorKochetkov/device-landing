@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -14,33 +15,26 @@
           <input type="submit" name="search-btn" value="Найти">
         </form>
 
-          <div class="user-block">
-          <a class="login" href="#">Валентин Петухов</a>
-          <a class="logout" href="#">Выйти</a>
-        </div>
+        <a class="login" href="#">Валентин Петухов</a>
+        <a class="logout" href="#">Выйти</a>
 
-        <div class="comparison">
-          <a href="#">Сравнить</a>
-        </div>
-        <div class="cart">
-          <a href="#">Корзина</a>
-        </div>
+        <a class="comparison" href="#">Сравнить</a>
+        <a class="cart" href="#">Корзина</a>
+
         <nav class="main-navigation">
           <ul class="catalog-list">
             <li><a href="#">Каталог товаров</a>
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="catalog-monopods.html">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a>
-                  <ul>
-                    <li><a href="#">Фитнесс-браслеты</a></li>
-                    <li><a href="#">Умные часы</a>
-                      <ul>
-                        <li><a href="#">Квадрокоптеры</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
+              </ul>
+              <ul>
+                <li><a href="#">Фитнесс-браслеты</a></li>
+                <li><a href="#">Умные часы</a>
+              </ul>
+              <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
               </ul>
             </li>
           </ul>
@@ -55,7 +49,7 @@
       <h2 class="index-content-title">Моноподы для селфи</h2>
       <nav class="breadcrumbs">
         <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог товаров</a>
+        <a href="#">Каталог товаров</a>
         <a class="active">Моноподы для селфи</a>
       </nav>
 
@@ -86,15 +80,15 @@
       <section class="index-content-right">
         <div class="sort">
           <h3>Сортировка:</h3>
-          <span>По цене</span>
-          <span>По типу</span>
-          <span>По популярности</span>
-          <span>По возрастанию</span>
-          <span>По убыванию</span>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По популярности</a>
+          <a href="#">По возрастанию</a>
+          <a href="#">По убыванию</a>
         </div>
 
         <article class="catalog-item">
-          <img src="#" width="360" height="380" alt="монопод">
+          <img src="img/item-1.jpg" width="360" height="380" alt="монопод">
           <h3><a href="#">Любительская селфи-палка</a></h3>
           <div class="price">500 руб.</div>
           <a class="btn" href="#">Купить</a>
@@ -102,7 +96,7 @@
         </article>
 
         <article class="catalog-item">
-          <img src="#" width="360" height="380" alt="монопод">
+          <img src="img/item-2.jpg" width="360" height="380" alt="монопод">
           <h3><a href="#">Профессиональная селфи-палка</a></h3>
           <div class="price">1 500 руб.</div>
           <a class="btn" href="#">Купить</a>
@@ -110,7 +104,7 @@
         </article>
 
         <article class="catalog-item">
-          <img src="#" width="360" height="380" alt="монопод">
+          <img src="img/item-3.jpg" width="360" height="380" alt="монопод">
           <h3><a href="#">Непотопляемая селфи-палка</a></h3>
           <div class="price">2 500 руб.</div>
           <a class="btn" href="#">Купить</a>
@@ -118,7 +112,7 @@
         </article>
 
         <article class="catalog-item">
-          <img src="#" width="360" height="380" alt="монопод">
+          <img src="img/item-4.jpg" width="360" height="380" alt="монопод">
           <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
           <div class="price">4 900 руб.</div>
           <a class="btn" href="#">Купить</a>
@@ -126,13 +120,13 @@
         </article>
 
         <div class="pagination">
-          <button class="btn-page-prev" type="button">Назад</button>
+          <a class="btn-page-prev">Назад</a>
           <ul>
             <li><a class="active">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
           </ul>
-          <button class="btn-page-next" type="button">Вперёд</button>
+          <a class="btn-page-next">Вперёд</a>
         </div>
       </section>
     </main>
@@ -140,15 +134,9 @@
     <footer class="main-footer">
       <div class="container">
         <a class="logo" href="index.html">Device</a>
-        <div class="user-block">
-          <a class="logout" href="#">Выйти</a>
-        </div>
-        <div class="comparison">
-          <a href="#">Сравнить</a>
-        </div>
-        <div class="cart">
-          <a href="#">Корзина</a>
-        </div>
+        <a class="logout" href="#">Выйти</a>
+        <a class="comparison" href="#">Сравнить</a>
+        <a class="cart" href="#">Корзина</a>
         <address>г. Москва, ул. Строителей, 15</address>
         <nav class="footer-navigation">
           <a class="delivery" href="#">Доставка</a>
