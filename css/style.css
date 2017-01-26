@@ -1,0 +1,28 @@
+body {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #464646;
+  font-weight: 300;
+  font-family: "Open Sans", "Trebuchet MS", sans-serif;
+}
+
+.logo {
+  font-size: 48px;
+  line-height: initial;
+  font-weight: 800;
+  color: #000000;
+}
+
+
+h2 {
+  font-size: 30px;
+  line-height: initial;
+  font-weight: 800;
+  color: #000000;
+}
+
+p {
+  font-size: 18px;
+  line-height: initial;
+}
