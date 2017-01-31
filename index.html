@@ -8,7 +8,7 @@
   <body>
 
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <a class="logo">Device</a>
 
         <form class="search" action="#" method="get">
@@ -16,21 +16,24 @@
           <input type="submit" name="search-btn" value="Найти">
         </form>
 
-        <a class="login" href="#">Войти</a>
+        <div class="user-block">
+          <a class="login" href="#">Войти</a>
+        </div>
+
         <a class="comparison" href="#">Сравнить</a>
         <a class="cart" href="#">Корзина</a>
 
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <ul class="catalog-list">
             <li><a href="#">Каталог товаров</a>
               <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="catalog-monopods.html">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a>
+                <li><a href="#">Виртуальная реальность</a></li><!--
+             --><li><a href="catalog-monopods.html">Моноподы для селфи</a></li><!--
+             --><li><a href="#">Экшн-камеры</a>
               </ul>
               <ul>
-                <li><a href="#">Фитнесс-браслеты</a></li>
-                <li><a href="#">Умные часы</a>
+                <li><a href="#">Фитнесс-браслеты</a></li><!--
+             --><li><a href="#">Умные часы</a>
               </ul>
               <ul>
                 <li><a href="#">Квадрокоптеры</a></li>
@@ -44,8 +47,8 @@
       </div>
     </header>
 
-    <main class="container">
-      <div class="promo-slider">
+    <main class="container clearfix">
+      <div class="promo-slider clearfix">
         <input type="radio" id="promo-btn-1" name="toggle" checked>
         <input type="radio" id="promo-btn-2" name="toggle">
         <input type="radio" id="promo-btn-3" name="toggle">
@@ -54,106 +57,129 @@
           <label for="promo-btn-2">&bull;</label>
           <label for="promo-btn-3">&bull;</label>
         </div>
+
         <div class="slider-inner">
           <div class="slider-slides">
-
-            <article class="slider-item">
-              <a href="#"><img src="img/slider-1.png" width="384" height="486" alt="selfie-stick"></a>
-              <h2>Делай селфи, как Бен Стиллер!</h2>
-              <p>Самая длинная палка для селфи доступна в нашем магазине.
-                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
-              <dl class="desc">
-                <dt>Длина палки</dt>
-                <dd>8,5 м</dd>
-                <dt>Вес палки</dt>
-                <dd>5 кг</dd>
-                <dt>Материал</dt>
-                <dd>Карбон</dd>
-              </dl>
+            <article class="slider-item clearfix">
+              <div class="img-box">
+                <a href="#"><img src="img/slider-1.png" width="384" height="486" alt="selfie-stick"></a>
+              </div>
+              <div class="desc-box">
+                <h2>Делай селфи,<br>
+                    как Бен Стиллер!</h2>
+                <p>Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
+                <dl class="desc">
+                  <div class="item-property">
+                    <dt>Длина палки</dt>
+                    <dd>8,5 м</dd>
+                  </div>
+                  <div class="item-property">
+                    <dt>Вес палки</dt>
+                    <dd>5 кг</dd>
+                  </div>
+                  <div class="item-property">
+                    <dt>Материал</dt>
+                    <dd>Карбон</dd>
+                  </div>
+                </dl>
+              </div>
             </article>
 
-            <article class="slider-item">
-              <a href="#"><img src="img/slider-2.png" width="384" height="486" alt="fitness-bracelet"></a>
-              <h2>Худеем правильно!</h2>
-              <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
-              <dl class="desc">
-                <dt>Без подзарядки</dt>
-                <dd>48 часов</dd>
-              </dl>
+            <article class="slider-item clearfix">
+              <div class="img-box">
+                <a href="#"><img src="img/slider-2.png" width="345" height="486" alt="fitness-bracelet"></a>
+              </div>
+              <div class="desc-box">
+                <h2>Худеем<br>
+                    правильно!</h2>
+                <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
+                <dl class="desc">
+                  <div class="item-property">
+                    <dt>Без подзарядки</dt>
+                    <dd>48 часов</dd>
+                  </div>
+                </dl>
+               </div>
             </article>
 
-            <article class="slider-item">
-              <a href="#"><img src="img/slider-3.png" width="384" height="486" alt="quadrocopters"></a>
-              <h2>Порхает как бабочка, жалит как пчела!</h2>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
-              <dl class="desc">
-                <dt>Дальность полета</dt>
-                <dd>800 м</dd>
-                <dt>Радиус поражения</dt>
-                <dd>50 м</dd>
-              </dl>
+            <article class="slider-item clearfix">
+              <div class="img-box">
+                <a href="#"><img src="img/slider-3.png" width="526" height="334" alt="quadrocopters"></a>
+              </div>
+              <div class="desc-box">
+                <h2>Порхает как бабочка,<br>
+                    жалит как пчела!</h2>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
+                <dl class="desc">
+                  <div class="item-property">
+                    <dt>Дальность полета</dt>
+                    <dd>800 м</dd>
+                  </div>
+                  <div class="item-property">
+                    <dt>Радиус поражения</dt>
+                    <dd>50 м</dd>
+                  </div>
+                </dl>
+              </div>
             </article>
           </div>
         </div>
       </div>
 
-      <div class="catalog-items">
-        <div class="virtual-reality">
+      <div class="catalog-items clearfix">
+        <div class="catalog-item">
           <a href="#">
-            <img src="img/popular-1.png" width="97" height="55" alt="Очки виртуальной реальности">
             <p>Виртуальная реальность</p>
           </a>
         </div>
 
-        <div class="monopods">
+        <div class="catalog-item">
           <a href="catalog-monopods.html">
-            <img src="img/popular-2.png" width="86" height="117" alt="Монопод для селфи">
             <p>Моноподы для селфи</p>
           </a>
         </div>
 
-        <div class="action-camera">
+        <div class="catalog-item">
           <a href="#">
-            <img src="img/popular-3.png" width="71" height="87" alt="Экшн-камера">
             <p>Экшн-камеры</p>
           </a>
         </div>
 
-        <div class="fitness-bracelets">
+        <div class="catalog-item">
           <a href="#">
-            <img src="img/popular-4.png" width="107" height="65" alt="Фитнесс браслет">
             <p>Фитнесс браслеты</p>
           </a>
         </div>
 
-        <div class="smart-watches">
+        <div class="catalog-item">
           <a href="#">
-            <img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
             <p>Умные часы</p>
           </a>
         </div>
 
-        <div class="quadrocopters">
+        <div class="catalog-item">
           <a href="#">
-            <img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптер">
             <p>Квадрокоптеры</p>
           </a>
         </div>
       </div>
 
       <div class="services-sliders">
-        <input type="radio" id="services-btn-1" name="toggle" checked>
-        <input type="radio" id="services-btn-2" name="toggle">
-        <input type="radio" id="services-btn-3" name="toggle">
-        <div class="slider-controls">
-          <label class="btn" for="services-btn-1">Доставка</label>
-          <label class="btn" for="services-btn-2">Гарантия</label>
-          <label class="btn" for="services-btn-3">Кредит</label>
+        <div class="services-btn">
+          <input type="radio" id="services-btn-1" name="toggle" checked>
+          <input type="radio" id="services-btn-2" name="toggle">
+          <input type="radio" id="services-btn-3" name="toggle">
+          <div class="slider-controls">
+            <label class="btn" for="services-btn-1">Доставка</label>
+            <label class="btn" for="services-btn-2">Гарантия</label>
+            <label class="btn" for="services-btn-3">Кредит</label>
+          </div>
         </div>
-        <div class="slider-inner">
+        <div class="slider-inner clearfix">
           <div class="slider-slides">
 
             <article class="slider-item">
@@ -181,10 +207,10 @@
       </div>
 
       <div class="promo-brand">
-        <a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="logo"></a>
-        <a href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="logo"></a>
-        <a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="logo"></a>
-        <a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="logo"></a>
+        <a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="logo"></a><!--
+     --><a href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="logo"></a><!--
+     --><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="logo"></a><!--
+     --><a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="logo"></a>
       </div>
 
       <section class="about-us">
@@ -210,44 +236,65 @@
 
     <footer class="main-footer">
       <div class="container">
-        <a class="logo">Device</a>
-        <a class="login" href="#">Войти</a>
-        <a class="comparison" href="#">Сравнить</a>
-        <a class="cart" href="#">Корзина</a>
+        <p class="row">
+          <a class="logo">Device</a><!--
+       --><a class="login" href="#">Войти</a><!--
+       --><a class="comparison" href="#">Сравнить</a><!--
+       --><a class="cart" href="#">Корзина</a>
+        </p>
 
-        <address>г. Москва, ул. Строителей, 15</address>
-        <nav class="footer-navigation">
-          <a class="delivery" href="#">Доставка</a>
-          <a class="warranty" href="#">Гарантия</a>
-          <a class="contacts" href="#">Контакты</a>
-        </nav>
-        <div class="footer-contacts">Тел.: +7 (495) 495-95-95</div>
-        <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-        <div class="footer-copyright">
-          <a href="https://htmlacademy.ru"><img src="#" width="27" height="34" alt="логотип HTML Academy"></a>
-        </div>
+        <p class="row">
+          <address>г. Москва, ул. Строителей, 15</address><!--
+       --><nav class="footer-navigation">
+            <a class="delivery" href="#">Доставка</a><!--
+         --><a class="warranty" href="#">Гарантия</a><!--
+         --><a class="contacts" href="#">Контакты</a>
+          </nav>
+          <div class="footer-contacts">Тел.: +7 (495) 495-95-95</div>
+        </p>
+        <p class="row">
+          <div class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a><!--
+         --><a class="social-btn social-btn-fb" href="#">Фейсбук</a><!--
+         --><a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-copyright">
+            <a href="https://htmlacademy.ru"><img src="#" width="27" height="34" alt="логотип HTML Academy"></a>
+          </div>
+        </p>
       </div>
     </footer>
+
+
   <!-- Модальное окно write us -->
+  <br>
+  <hr>
+ФОРМА
   <div class="write-us" id="write-us">
     <form action="#" method="post">
-      <label for="client-name">Ваше имя:</label>
-      <input type="text" name="name" id="client-name" placeholder="Представьтесь, пожалуйста">
-      <label for="client-email">Ваш e-mail:</label>
-      <input type="text" name="email" id="client-email" placeholder="Для отправки ответа">
-      <label for="email-text">Текст письма:</label>
-      <textarea name="email-text" id="email-text" cols="30" rows="10">В свободной форме</textarea>
-      <button class="btn" type="submit">Отправить</button>
+      <div class="clearfix">
+        <div class="wrap-name">
+          <label for="client-name">Ваше имя:<br></label>
+          <input type="text" name="name" id="client-name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="wrap-mail">
+          <label for="client-email">Ваш e-mail:<br></label>
+          <input type="text" name="email" id="client-email" placeholder="Для отправки ответа">
+        </div>
+      </div>
+      <div class="wrap-text">
+        <label for="email-text">Текст письма:<br></label>
+        <textarea name="email-text" id="email-text" cols="30" rows="10">В свободной форме</textarea>
+      </div>
+        <button class="btn" type="submit">Отправить</button>
     </form>
     <a class="modal-close-btn" href="#"><img src="#" width="23" height="22" alt="Кнопка закрыть"></a>
   </div>
+
   <!-- Модальное окно popup-map -->
+КАРТА
   <div class="popup-map" id="popup-map">
-    <div class="map"></div>
+    <img src="img/map-big.jpg" width="960" height="559">
     <a class="modal-close-btn" href="#"><img src="#" width="23" height="22" alt="Кнопка закрыть"></a>
   </div>
   </body>

@@ -1,28 +1,528 @@
+html,
 body {
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.01em;
-  color: #464646;
-  font-weight: 300;
-  font-family: "Open Sans", "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  min-width: 1200px;
+  font-size: 15px;
+  line-height: 2em;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  font-family: "Open Sans", "Trebuchet MS", sans-serif;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+p {
+  font-size: 15px;
+  line-height: 2em;
+  font-weight: 200;
+}
+
+img {
+  /*для наглядности*/
+  outline: 2px solid blueviolet;
+}
+
+/*-------------------HEAD-----------------*/
+.main-header {
+  height: 300px;
+  margin-top: 40px;
+  /*для наглядности*/
+  outline: 2px solid crimson;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /*для наглядности*/
+  outline: 2px solid green;
+}
+
+.main-header .logo {
+  display: block;
+  margin-left: 60px;
   font-size: 48px;
   line-height: initial;
   font-weight: 800;
   color: #000000;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
 }
 
+.main-header .search {
+  float: left;
+  width: 440px;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
 
-h2 {
-  font-size: 30px;
+.main-header .user-block {
+  float: left;
+  width: 260px;
+  margin-top: 50px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+/*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-header .login {
+  width: 160px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-header .logout {
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-header .comparison {
+  float: left;
+  width: 100px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-header .cart {
+  float: right;
+  width: 100px;
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-bottom: 50px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-navigation {
+  margin-top: 50px;
+  /*для наглядности*/
+  outline: 2px solid orangered;
+}
+
+.main-navigation .catalog-list {
+  float: left;
+  width: 300px;
+  /*width: 700px; при открытии каталога*/
+  margin: 0;
+  padding: 0;
+  margin-right: 240px;
+  /*для наглядности*/
+  outline: 2px solid blueviolet;
+}
+
+.catalog-list ul {
+  display: none;
+  /*display: inline-block; при открытии каталога
+  vertical-align: top;*/
+  /*для наглядности*/
+  outline: 2px solid red;
+}
+
+.main-header .delivery {
+  float: left;
+  width: 120px;
+  margin-right: 40px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-header .warranty {
+  float: left;
+  width: 120px;
+  margin-right: 100px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-header .contacts {
+  float: left;
+  width: 120px;
+  /*margin-left: 60px;*/
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+/*-------------------MAIN------------------*/
+.promo-slider .slider-item {
+  margin-bottom: 95px;
+  /*для наглядности*/
+  outline: 2px solid lightseagreen;
+}
+
+.img-box {
+  float: left;
+  width: 560px;
+  text-align: center;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.desc-box {
+  float: right;
+  width: 560px;
+  margin-top: 80px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.desc dd,
+.desc dt {
+  margin: 0;
+  padding: 0;
+}
+
+.desc {
+  margin-top: 60px;
+}
+
+.item-property {
+  float: left;
+  width: 160px;
+  /*для наглядности*/
+  outline: 2px solid orangered;
+}
+
+.index-content-title {
+  font-size: 47px;
   line-height: initial;
   font-weight: 800;
   color: #000000;
 }
 
-p {
+.catalog-item {
+  float: left;
+  width: 160px;
+  margin-right: 40px;
+  margin-bottom: 80px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.catalog-item p {
   font-size: 18px;
   line-height: initial;
+  font-weight: 800;
+}
+
+  box-sizing: border-box;
+  height: 160px;
+  width: 160px;
+  margin: 0;
+  text-align: center;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.services-sliders {
+  margin-bottom: 80px;
+  /*для наглядности*/
+  outline: 2px solid orangered;
+}
+
+.services-btn {
+  float: left;
+  width: 280px;
+}
+
+.services-sliders .slider-item {
+  float: right;
+  width: 800px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.services-sliders h2,
+.services-sliders p {
+  float: left;
+  width: 500px;
+}
+
+.services-sliders img {
+  float: right;
+  margin-top: 0;
+}
+
+.promo-brand {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 90px;
+}
+
+.promo-brand a {
+  margin-right: 40px;
+}
+
+.promo-brand a:last-child {
+  margin-right: 0;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.about-us {
+  float: left;
+  width: 480px;
+  margin-bottom: 80px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.index-contacts {
+  float: right;
+  width: 580px;
+  margin-bottom: 80px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
+  /*для наглядности*/
+  outline: 2px solid mediumspringgreen;
+}
+
+.sort {
+  margin-bottom: 70px;
+}
+
+.index-content-left {
+  float: left;
+  width: 330px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.sort h3 {
+  display: inline-block;
+  width: 160px;
+}
+
+.catalog-item h3 {
+  width: auto;
+}
+.index-content-right {
+  float: right;
+  width: 760px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.index-content-right .catalog-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+  margin-right: 40px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.index-content-right  article:nth-of-type(2n) {
+  margin-right: 0;
+  /*для наглядности*/
+  outline: 2px solid cornflowerblue;
+}
+
+.pagination {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /*для наглядности*/
+  outline: 4px solid cornflowerblue;
+}
+
+.pagination .btn-page-prev {
+  float: left;
+  width: 130px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.pagination-pages {
+  float: left;
+  width: 460px;
+  text-align: center;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.pagination .btn-page-next {
+  float: right;
+  width: 130px;
+  margin-left: 20px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-footer .container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.main-footer .row {
+  margin-bottom: 40px;
+}
+
+.main-footer .logo {
+  display: inline-block;
+  width: 180px;
+  margin-right: 640px;
+  font-size: 48px;
+  line-height: initial;
+  font-weight: 800;
+  color: #000000;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-footer .login {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-footer .logout {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+
+.main-footer .comparison {
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-footer .cart {
+  display: inline-block;
+  width: 100px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.main-footer address {
+  display: inline-block;
+  width: 260px;
+  margin-right: 105px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.footer-navigation {
+  display: inline-block;
+  width: 500px;
+  margin-right: 110px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.footer-navigation a {
+  display: inline-block;
+  width: 140px;
+  margin-right: 20px;
+}
+
+.footer-contacts {
+  display: inline-block;
+  width: 180px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.footer-social {
+  display: inline-block;
+  width: 260px;
+  margin-left: 460px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.footer-copyright {
+  display: inline-block;
+  width: 60px;
+  margin-left: 375px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.write-us {
+  box-sizing: border-box;
+  width: 960px;
+  height: 559px;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.wrap-name {
+  float: left;
+  width: 360px;
+  margin-left: 100px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.wrap-mail {
+  float: right;
+  width: 360px;
+  margin-right: 100px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.wrap-text {
+  width: 760px;
+  margin: 0 auto;
+  margin-top: 35px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.wrap-text textarea {
+  width: 755px;
+}
+
+.write-us .btn {
+  width: 200px;
+  height: 40px;
+  margin-top: 35px;
+  margin-left: 100px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
+}
+
+.popup-map {
+  box-sizing: border-box;
+  width: 960px;
+  height: 559px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
 }
