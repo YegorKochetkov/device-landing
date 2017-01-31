@@ -222,6 +222,7 @@ img {
   font-weight: 800;
 }
 
+.item-background {
   box-sizing: border-box;
   height: 160px;
   width: 160px;
