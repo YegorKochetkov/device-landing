@@ -322,6 +322,7 @@ img {
 .catalog-item h3 {
   width: auto;
 }
+
 .index-content-right {
   float: right;
   width: 760px;
@@ -375,9 +376,11 @@ img {
   outline: 2px solid greenyellow;
 }
 
-.main-footer .container {
+.main-footer {
   padding-top: 50px;
   padding-bottom: 60px;
+  /*для наглядности*/
+  background: lightslategrey;
 }
 
 .main-footer .row {
@@ -386,6 +389,7 @@ img {
 
 .main-footer .logo {
   display: inline-block;
+  vertical-align: middle;
   width: 180px;
   margin-right: 640px;
   font-size: 48px;
@@ -398,6 +402,7 @@ img {
 
 .main-footer .login {
   display: inline-block;
+  vertical-align: middle;
   width: 100px;
   margin-right: 20px;
   /*для наглядности*/
@@ -406,6 +411,7 @@ img {
 
 .main-footer .logout {
   display: inline-block;
+  vertical-align: middle;
   width: 100px;
   margin-right: 20px;
   /*для наглядности*/
@@ -415,6 +421,7 @@ img {
 
 .main-footer .comparison {
   display: inline-block;
+  vertical-align: middle;
   width: 100px;
   margin-right: 20px;
   /*для наглядности*/
@@ -423,6 +430,7 @@ img {
 
 .main-footer .cart {
   display: inline-block;
+  vertical-align: middle;
   width: 100px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
@@ -430,6 +438,7 @@ img {
 
 .main-footer address {
   display: inline-block;
+  vertical-align: middle;
   width: 260px;
   margin-right: 105px;
   /*для наглядности*/
@@ -438,6 +447,7 @@ img {
 
 .footer-navigation {
   display: inline-block;
+  vertical-align: middle;
   width: 500px;
   margin-right: 110px;
   /*для наглядности*/
@@ -446,12 +456,14 @@ img {
 
 .footer-navigation a {
   display: inline-block;
+  vertical-align: middle;
   width: 140px;
   margin-right: 20px;
 }
 
 .footer-contacts {
   display: inline-block;
+  vertical-align: middle;
   width: 180px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
@@ -459,6 +471,7 @@ img {
 
 .footer-social {
   display: inline-block;
+  vertical-align: middle;
   width: 260px;
   margin-left: 460px;
   /*для наглядности*/
@@ -467,13 +480,16 @@ img {
 
 .footer-copyright {
   display: inline-block;
+  vertical-align: middle;
   width: 60px;
   margin-left: 375px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
 
+/*всплывающие окна*/
 .write-us {
+  display: none;
   box-sizing: border-box;
   width: 960px;
   height: 559px;
@@ -521,6 +537,7 @@ img {
 }
 
 .popup-map {
+  display: none;
   box-sizing: border-box;
   width: 960px;
   height: 559px;
