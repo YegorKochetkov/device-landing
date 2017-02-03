@@ -15,16 +15,16 @@ body {
   font-size: 15px;
   line-height: 2em;
   letter-spacing: 0.01em;
-  font-weight: 300;
+  font-weight: 200;
   font-family: "Open Sans", "Trebuchet MS", sans-serif;
   color: #464646;
   background-color: #ffffff;
 }
 
-p {
-  font-size: 15px;
-  line-height: 2em;
-  font-weight: 200;
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 img {
@@ -32,49 +32,115 @@ img {
   outline: 2px solid blueviolet;
 }
 
-/*-------------------HEAD-----------------*/
-.main-header {
+.main-header .container {
   height: 300px;
   margin-top: 40px;
+  background-color: #f7e196;
   /*для наглядности*/
-  outline: 2px solid crimson;
+  outline: 1px solid red;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 10px;
-  /*для наглядности*/
-  outline: 2px solid green;
-}
-
-.main-header .logo {
+ .main-header .logo {
+  position: relative;
   display: block;
+  top: -30px;
   margin-left: 60px;
+  font-family: "Gilroy", "Open Sans", "Trebuchet MS", sans-serif;
   font-size: 48px;
-  line-height: initial;
-  font-weight: 800;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
   /*для наглядности*/
-  outline: 2px solid greenyellow;
+  outline: 1px solid red;
 }
 
-.main-header .search {
-  float: left;
+/*-----------------ПОИСК В ШАПКЕ---------------*/
+/*------ спросить у наставника как делать ---------*/
+.search {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
   width: 440px;
-  margin-top: 50px;
   margin-right: 100px;
-  margin-bottom: 50px;
+  margin-left: 60px;
+  margin-top: -25px;
   /*для наглядности*/
-  outline: 2px solid greenyellow;
+  outline: 1px solid red;
 }
+
+.search-field,
+.search-btn {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -2px;
+  font-size: 15px;
+  line-height: 2.4em;
+  background-color: #f7e196;
+  border: none;
+}
+
+.search-field {
+  width: 355px;
+  padding-left: 40px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  opacity: 0.3;
+}
+
+.search::before  {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 4px;
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+}
+
+.search-btn {
+  visibility: hidden;
+}
+
+.search:hover .search-field {
+  opacity: 1;
+}
+
+.search-field:focus {
+  border-bottom: 2px solid #000000;
+  opacity: 1;
+}
+
+.search-field:focus + .search-btn {
+  visibility: visible;
+  width: 85px;
+  border: 2px solid #000000;
+}
+
+.search-field:focus + .search-btn:hover {
+  visibility: visible;
+  width: 85px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search:hover .search-btn:active {
+  visibility: visible;
+  width: 85px;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+/*---------КОНЕЦ ПОИСК В ШАПКЕ--------*/
 
 .main-header .user-block {
-  float: left;
-  width: 260px;
-  margin-top: 50px;
-  margin-right: 40px;
-  margin-bottom: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 245px;
+  margin-top: -25px;
+  margin-right: 20px;
 /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -92,52 +158,81 @@ img {
 }
 
 .main-header .comparison {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   width: 100px;
-  margin-top: 50px;
+  margin-top: -25px;
   margin-right: 20px;
-  margin-bottom: 50px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
 
 .main-header .cart {
-  float: right;
+  display: inline-block;
+  vertical-align: middle;
   width: 100px;
-  margin-top: 50px;
+  margin-top: -25px;
   margin-right: 60px;
-  margin-bottom: 50px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
 
 .main-navigation {
-  margin-top: 50px;
+  margin-top: 25px;
   /*для наглядности*/
   outline: 2px solid orangered;
 }
 
-.main-navigation .catalog-list {
-  float: left;
-  width: 300px;
-  /*width: 700px; при открытии каталога*/
+/* =======    КАТАЛОГ   =======      */
+.main-navigation ul {
   margin: 0;
   padding: 0;
-  margin-right: 240px;
+  list-style-type: none;
+}
+
+.main-navigation .catalog-list {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 260px;
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+  margin-right: 280px;
   /*для наглядности*/
   outline: 2px solid blueviolet;
 }
 
 .catalog-list ul {
   display: none;
-  /*display: inline-block; при открытии каталога
-  vertical-align: top;*/
-  /*для наглядности*/
-  outline: 2px solid red;
+}
+/*-------------------------------*/
+.catalog-list:hover ul {
+  position: absolute;
+  display: block;
+  /*vertical-align: top;*/
 }
 
+.catalog-list:hover ul:first-of-type {
+  min-width: 220px;
+  margin-right: 20px;
+}
+
+.catalog-list:hover ul:nth-of-type(2) {
+  min-width: 180px;
+  margin-left: 220px;
+}
+
+.catalog-list:hover ul:nth-of-type(3) {
+  min-width: 180px;
+  margin-left: 400px;
+}
+
+
+/*            КОНЕЦ КАТАЛОГА       */
+
 .main-header .delivery {
-  float: left;
+display: inline-block;
+vertical-align: top;
   width: 120px;
   margin-right: 40px;
   /*для наглядности*/
@@ -145,7 +240,8 @@ img {
 }
 
 .main-header .warranty {
-  float: left;
+display: inline-block;
+vertical-align: top;
   width: 120px;
   margin-right: 100px;
   /*для наглядности*/
@@ -153,7 +249,8 @@ img {
 }
 
 .main-header .contacts {
-  float: left;
+display: inline-block;
+vertical-align: top;
   width: 120px;
   /*margin-left: 60px;*/
   /*для наглядности*/
@@ -291,7 +388,7 @@ img {
 
 .index-contacts {
   float: right;
-  width: 580px;
+  width: 560px;
   margin-bottom: 80px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
@@ -383,18 +480,16 @@ img {
   background: lightslategrey;
 }
 
-.main-footer .row {
-  margin-bottom: 40px;
-}
-
 .main-footer .logo {
   display: inline-block;
   vertical-align: middle;
   width: 180px;
-  margin-right: 640px;
+  margin-left: 20px;
+  margin-right: 620px;
+  margin-bottom: 30px;
   font-size: 48px;
-  line-height: initial;
-  font-weight: 800;
+  line-height: 1.2em;
+  font-weight: 700;
   color: #000000;
   /*для наглядности*/
   outline: 2px solid greenyellow;
@@ -405,6 +500,7 @@ img {
   vertical-align: middle;
   width: 100px;
   margin-right: 20px;
+  margin-bottom: 30px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -414,6 +510,7 @@ img {
   vertical-align: middle;
   width: 100px;
   margin-right: 20px;
+  margin-bottom: 30px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -424,6 +521,7 @@ img {
   vertical-align: middle;
   width: 100px;
   margin-right: 20px;
+  margin-bottom: 30px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -432,6 +530,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 100px;
+  margin-bottom: 30px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -441,6 +540,7 @@ img {
   vertical-align: middle;
   width: 260px;
   margin-right: 105px;
+  margin-bottom: 60px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -450,6 +550,7 @@ img {
   vertical-align: middle;
   width: 500px;
   margin-right: 110px;
+  margin-bottom: 60px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -465,6 +566,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 180px;
+  margin-bottom: 60px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
