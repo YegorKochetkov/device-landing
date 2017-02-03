@@ -183,14 +183,8 @@ img {
   outline: 2px solid orangered;
 }
 
-/* =======    КАТАЛОГ   =======      */
-.main-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .main-navigation .catalog-list {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   min-width: 260px;
@@ -198,37 +192,43 @@ img {
   padding: 0;
   margin-left: 60px;
   margin-right: 280px;
+  list-style-type: none;
   /*для наглядности*/
   outline: 2px solid blueviolet;
 }
 
-.catalog-list ul {
+.catalog-list .sub-menu {
   display: none;
 }
-/*-------------------------------*/
-.catalog-list:hover ul {
+
+.catalog-list a {
+  text-decoration: none;
+}
+.catalog-list:hover .sub-menu {
   position: absolute;
+  left: -60px;
   display: block;
-  /*vertical-align: top;*/
+  height: 130px;
+  width: 660px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  list-style-type: none;
+  /*для наглядности*/
+  outline: 2px solid blueviolet;
 }
 
-.catalog-list:hover ul:first-of-type {
-  min-width: 220px;
-  margin-right: 20px;
+.catalog-list .sub-menu:nth-of-type(1) {
+  padding-left: 60px;
 }
 
-.catalog-list:hover ul:nth-of-type(2) {
-  min-width: 180px;
-  margin-left: 220px;
+.catalog-list .sub-menu:nth-of-type(2) {
+  margin-left: 300px;
 }
 
-.catalog-list:hover ul:nth-of-type(3) {
-  min-width: 180px;
-  margin-left: 400px;
+.catalog-list .sub-menu:nth-of-type(3) {
+  margin-left: 500px;
 }
-
-
-/*            КОНЕЦ КАТАЛОГА       */
 
 .main-header .delivery {
 display: inline-block;
