@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
     <header class="main-header">
       <div class="container">
         <a class="logo">Device</a>
@@ -23,12 +23,12 @@
         <a class="cart" href="#">Корзина</a>
 
         <nav class="main-navigation">
-          <ul class="catalog-list">
-            <li><a href="#">Каталог товаров</a>
+          <ul>
+            <li class="catalog"><a class="catalog-link" href="#">Каталог товаров</a>
               <ul class="sub-menu">
                 <li><a href="#">Виртуальная реальность</a></li><!--
              --><li><a href="catalog-monopods.html">Моноподы для селфи</a></li><!--
-              --><li><a href="#">Экшн-камеры</a>
+             --><li><a href="#">Экшн-камеры</a>
               </ul>
               <ul class="sub-menu">
                 <li><a href="#">Фитнесс-браслеты</a></li><!--
@@ -48,7 +48,7 @@
 
     <main>
       <div class="container">
-        <div class="promo-slider ">
+        <div class="promo-slider">
           <input type="radio" id="promo-btn-1" name="toggle" checked>
           <input type="radio" id="promo-btn-2" name="toggle">
           <input type="radio" id="promo-btn-3" name="toggle">
@@ -67,20 +67,20 @@
                 <h2>Делай селфи,<br>
                     как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <div class="btn"><a class="item-link" href="#">Подробнее</a></div>
                 <dl class="desc clearfix">
                   <div class="item-property">
-                    <dt>Длина палки</dt>
                     <dd>8,5 м</dd>
+                    <dt>Длина палки</dt>
                   </div>
                   <div class="item-property">
-                    <dt>Вес палки</dt>
                     <dd>5 кг</dd>
+                    <dt>Вес палки</dt>
                   </div>
                   <div class="item-property">
-                    <dt>Материал</dt>
                     <dd>Карбон</dd>
+                    <dt>Материал</dt>
                   </div>
                 </dl>
               </div>
@@ -94,11 +94,11 @@
                 <h2>Худеем<br>
                     правильно!</h2>
                 <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
+                <div class="btn"><a class="item-link" href="#">Подробнее</a></div>
                 <dl class="desc clearfix">
                   <div class="item-property">
-                    <dt>Без подзарядки</dt>
                     <dd>48 часов</dd>
+                    <dt>Без подзарядки</dt>
                   </div>
                 </dl>
               </div>
@@ -112,15 +112,15 @@
                 <h2>Порхает как бабочка,<br>
                     жалит как пчела!</h2>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <p class="item-link"><a class="btn" href="#">Подробнее</a></p>
+                <div class="btn"><a class="item-link" href="#">Подробнее</a></div>
                 <dl class="desc clearfix">
                   <div class="item-property">
-                    <dt>Дальность полета</dt>
                     <dd>800 м</dd>
+                    <dt>Дальность полета</dt>
                   </div>
                   <div class="item-property">
-                    <dt>Радиус поражения</dt>
                     <dd>50 м</dd>
+                    <dt>Радиус поражения</dt>
                   </div>
                 </dl>
               </div>
@@ -128,7 +128,7 @@
           </div>
         </div>
 
-        <div class="catalog-items clearfix">
+        <div class="clearfix">
           <div class="catalog-item">
             <a href="#">
               <div class="item-background"><img src="img/popular-1.png" width="97" height="55" alt="Очки виртуальной реальности"></div>
@@ -171,35 +171,36 @@
             </a>
           </div>
         </div>
-
-        <div class="services-sliders clearfix">
+      </div>
+      <div class="services-sliders clearfix">
+        <div class="container">
           <div class="services-btn">
             <input type="radio" id="services-btn-1" name="toggle" checked>
             <input type="radio" id="services-btn-2" name="toggle">
             <input type="radio" id="services-btn-3" name="toggle">
             <div class="slider-controls">
-              <label class="btn" for="services-btn-1">Доставка</label>
-              <label class="btn" for="services-btn-2">Гарантия</label>
-              <label class="btn" for="services-btn-3">Кредит</label>
+              <div class="btn"><label class="services active" for="services-btn-1">Доставка</label></div>
+              <div class="btn"><label class="services" for="services-btn-2">Гарантия</label></div>
+              <div class="btn"><label class="services" for="services-btn-3">Кредит</label></div>
             </div>
           </div>
-          <div class="slider-slides clearfix">
+          <div class="wrapper">
 
-            <article class="slider-item">
+            <article class="services-slider-item">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               <img src="img/delivery.png" width="136" height="164" alt="Курьер">
             </article>
 
-            <article class="slider-item">
+            <article class="services-slider-item">
               <h2>Гарантия</h2>
               <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
               <img src="img/warranty.png" width="171" height="195" alt="Звонок в сервис">
             </article>
 
-            <article class="slider-item">
+            <article class="services-slider-item">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                 Выгодные для нашего банка, разумеется.</p>
@@ -207,13 +208,16 @@
             </article>
           </div>
         </div>
+      </div>
 
+      <div class="container">
         <div class="promo-brand">
-          <a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="logo"></a><!--
-      --><a href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="logo"></a><!--
-      --><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="logo"></a><!--
-      --><a href="#"><img src="img/logo-4.jpg" width="260" height="100" alt="logo"></a>
+          <a href="#"><img src="img/logo-1с.jpg" width="260" height="100" alt="logo"></a><!--
+       --><a href="#"><img src="img/logo-2с.jpg" width="260" height="100" alt="logo"></a><!--
+       --><a href="#"><img src="img/logo-3с.jpg" width="260" height="100" alt="logo"></a><!--
+       --><a href="#"><img src="img/logo-4с.jpg" width="260" height="100" alt="logo"></a>
         </div>
+
         <div class="clearfix">
           <section class="about-us">
             <h2>О нас</h2>
@@ -224,7 +228,7 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="btn" href="#">Подробнее о нас</a>
+            <div class="btn"><a href="#">Подробнее о нас</a></div>
           </section>
 
           <section class="index-contacts">
@@ -232,7 +236,7 @@
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
               Всякое бывает.</p>
             <a href="#popup-map"><img src="img/map.jpg" width="560" height="222" alt="Схема проезда"></a>
-            <a class="btn" href="#write-us">Напишите нам</a>
+            <div class="btn"><a href="#write-us">Напишите нам</a></div>
           </section>
         </div>
       </div>
@@ -247,20 +251,16 @@
 
         <address>г. Москва, ул. Строителей, 15</address><!--
      --><nav class="footer-navigation">
-        <a class="delivery" href="#">Доставка</a><!--
-     --><a class="warranty" href="#">Гарантия</a><!--
-     --><a class="contacts" href="#">Контакты</a>
+        <a href="#">Доставка</a><!--
+     --><a href="#">Гарантия</a><!--
+     --><a href="#">Контакты</a>
         </nav>
         <div class="footer-contacts">Тел.: +7 (495) 495-95-95</div>
 
-        <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a><!--
-       --><a class="social-btn social-btn-fb" href="#">Фейсбук</a><!--
-       --><a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-        <div class="footer-copyright">
-          <a href="https://htmlacademy.ru"><img src="#" width="27" height="34" alt="логотип HTML Academy"></a>
-        </div>
+        <a class="social-btn social-btn-fb" href="#">Вконтакте</a><!--
+     --><a class="social-btn social-btn-inst" href="#">Фейсбук</a><!--
+     --><a class="social-btn social-btn-twit" href="#">Инстаграм</a>
+        <a class="footer-copyright" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
 
@@ -281,7 +281,7 @@
           <label for="email-text">Текст письма:<br></label>
           <textarea name="email-text" id="email-text" cols="30" rows="10">В свободной форме</textarea>
         </div>
-          <button class="btn" type="submit">Отправить</button>
+          <div class="btn"><button type="submit">Отправить</button></div>
       </form>
       <a class="modal-close-btn" href="#"><img src="#" width="23" height="22" alt="Кнопка закрыть"></a>
     </div>
