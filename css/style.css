@@ -95,6 +95,10 @@ img {
   background-color: #f0c52e;
 }
 
+.btn:hover.btn::before {
+  background-color: transparent;
+}
+
 .btn:hover {
   background-color: #f0c52e;
 }
@@ -719,11 +723,32 @@ img {
 }
 /* НАДО РАЗОБРАТЬСЯ КАК ПЕРЕОПРЕДЕЛИТЬ ::before !
    или отказаться от .btn и нарисовать напрямую здесь */
-.active {
-  margin: -25px;
-  padding: 12px 25px;
-  width: 235px;
-  text-align: left;
+
+.btn.active::before {
+  display: none;
+}
+
+.services-btn .btn.active,
+.services-btn .btn:active {
+  padding: 12px 0;
+  padding-left: 25px;
+  padding-right: 150px;
+/*  margin-left: -25px;*/
+  color: #f0c52e;
+  background-color: #000000;
+  opacity: 1;
+}
+
+.btn.active .services,
+.btn:active .services {
+  color: #f0c52e;
+  background-color: #000000;
+  opacity: 1;
+}
+
+.btn.active:hover,
+ {
+  background-color: transparent;
 }
 
 .services {
