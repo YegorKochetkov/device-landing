@@ -469,19 +469,42 @@ img {
 }
 
 .promo-slider input[type="radio"] {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .promo-slider .slider-controls {
   position: absolute;
-  top: 315px;
-  left: 1000px;
-  /*для наглядности*/
-  outline: 2px solid blueviolet;
+  display: inline-block;
+  top: 320px;
+  left: 995px;
+  width: 160px;
+  height: 20px;
+  text-align: left;
+  z-index: 1000;
+}
+
+.slider-controls .slider-dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 9px;
+  border: 3px solid #000000;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+#promo-btn-1:checked ~ .slider-controls label[for="promo-btn-1"],
+#promo-btn-2:checked ~ .slider-controls label[for="promo-btn-2"],
+#promo-btn-3:checked ~ .slider-controls label[for="promo-btn-3"] {
+  opacity: 1;
 }
 
 .promo-slider .slider-item {
   height: 520px;
+  overflow: hidden;
 }
 
 .promo-slider .slider-item:nth-child(1)::before {
@@ -570,12 +593,6 @@ img {
   display: inline-block;
 }
 
-/*-----------------HIDE SLIDE------------------*/
-.promo-slider .slider-item:not(:nth-child(1)) {
-  display: none;
-  margin-bottom: 95px;
-}
-
 .img-box {
   float: left;
   width: 560px;
@@ -615,6 +632,27 @@ img {
 
 .item-property:last-child {
   margin-right: 0;
+}
+
+/*---------------CHANGE SLIDE------------------*/
+.promo-slider .slider-item {
+  display: none;
+}
+
+
+#promo-btn-1:checked ~ .slides .slider-item:nth-child(1) {
+  display: block;
+  margin-bottom: -35px;
+}
+
+#promo-btn-2:checked ~ .slides .slider-item:nth-child(2) {
+  display: block;
+  margin-bottom: -35px;
+}
+
+#promo-btn-3:checked ~ .slides .slider-item:nth-child(3) {
+  display: block;
+  margin-bottom: -35px;
 }
 /*---------------END PROMO SLIDES--------------*/
 
@@ -693,22 +731,24 @@ img {
 /*-------------END OF CATALOG IN MAIN----------*/
 
 /*------------SERVICES SLIDES IN MAIN----------*/
-.services-sliders {
+.services-slider {
+  position: relative;
   height: 285px;
   margin-bottom: 100px;
   background-color: #e5e5e5;
 }
 
-.services-sliders .container {
+.services-slider .container {
   position: relative;
   top: -98px;
 }
 
-.services-btn input[type="radio"] {
-  display: none;
+.services-slider input[type="radio"] {
+  position: absolute;
+  opacity: 0;
 }
 
-.services-btn {
+.services-controls {
   float: left;
   width: 280px;
   padding-top: 75px;
@@ -716,24 +756,22 @@ img {
   border-right: 8px solid #000000;
 }
 
-.services-btn .btn {
+.services-controls .btn {
+/*  display: block;*/
   margin-bottom: 20px;
   width: 110px;
   text-align: center;
 }
-/* НАДО РАЗОБРАТЬСЯ КАК ПЕРЕОПРЕДЕЛИТЬ ::before !
-   или отказаться от .btn и нарисовать напрямую здесь */
 
 .btn.active::before {
   display: none;
 }
 
-.services-btn .btn.active,
-.services-btn .btn:active {
+.services-controls .btn.active,
+.services-controls .btn:active {
   padding: 12px 0;
   padding-left: 25px;
   padding-right: 150px;
-/*  margin-left: -25px;*/
   color: #f0c52e;
   background-color: #000000;
   opacity: 1;
@@ -752,13 +790,16 @@ img {
 }
 
 .services {
+  display: block;
   position: relative;
-  display: inline-block;
+  width: 110px;
 }
 /*---------------------------*/
 .services-slider-item {
+  position: relative;
   float: right;
   width: 800px;
+  overflow: hidden;
 }
 
 .services-slider-item h2,
@@ -780,12 +821,27 @@ img {
 
 .services-slider-item img {
   position: absolute;
-  top: 84px;
-  left: 960px;
+  top: 50px;
+  left: 550px;
 }
 /*---------------CHANGE SLIDE------------------*/
-.services-slider-item:not(:nth-child(1)) {
+.services-slider-item {
   display: none;
+}
+
+#services-btn-1:checked ~ .services-slides .services-slider-item:nth-child(1) {
+  display: block;
+  margin-bottom: -35px;
+}
+
+#services-btn-2:checked ~ .services-slides .services-slider-item:nth-child(2) {
+  display: block;
+  margin-bottom: -35px;
+}
+
+#services-btn-3:checked ~ .services-slides .services-slider-item:nth-child(3) {
+  display: block;
+  margin-bottom: -35px;
 }
 /*--------END OF SERVICES SLIDES IN MAIN-------*/
 

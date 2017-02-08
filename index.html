@@ -53,12 +53,12 @@
           <input type="radio" id="promo-btn-2" name="toggle">
           <input type="radio" id="promo-btn-3" name="toggle">
           <div class="slider-controls">
-            <label for="promo-btn-1">&bull;</label>
-            <label for="promo-btn-2">&bull;</label>
-            <label for="promo-btn-3">&bull;</label>
+            <label class="slider-dot" for="promo-btn-1"></label>
+            <label class="slider-dot" for="promo-btn-2"></label>
+            <label class="slider-dot" for="promo-btn-3"></label>
           </div>
 
-          <div class="wrapper">
+          <div class="slides">
             <article class="slider-item clearfix">
               <div class="img-box">
                 <a href="#"><img src="img/slider-1.png" width="384" height="486" alt="selfie-stick"></a>
@@ -172,20 +172,19 @@
           </div>
         </div>
       </div>
-      <div class="services-sliders clearfix">
+      
+      <div class="services-slider">
         <div class="container">
-          <div class="services-btn">
-            <input type="radio" id="services-btn-1" name="toggle" checked>
-            <input type="radio" id="services-btn-2" name="toggle">
-            <input type="radio" id="services-btn-3" name="toggle">
-            <div class="slider-controls">
-              <div class="btn active"><label class="services" for="services-btn-1">Доставка</label></div>
-              <div class="btn"><label class="services" for="services-btn-2">Гарантия</label></div>
-              <div class="btn"><label class="services" for="services-btn-3">Кредит</label></div>
-            </div>
+          <input type="radio" id="services-btn-1" name="toggle" checked>
+          <input type="radio" id="services-btn-2" name="toggle">
+          <input type="radio" id="services-btn-3" name="toggle">
+          <div class="services-controls">
+            <div class="btn active"><label class="services" for="services-btn-1">Доставка</label></div>
+            <div class="btn"><label class="services" for="services-btn-2">Гарантия</label></div>
+            <div class="btn"><label class="services" for="services-btn-3">Кредит</label></div>
           </div>
-          <div class="wrapper">
-
+          
+          <div class="services-slides clearfix">
             <article class="services-slider-item">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
