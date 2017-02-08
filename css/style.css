@@ -81,6 +81,7 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
+  cursor: pointer;
 }
 
 .btn::before {
@@ -496,9 +497,9 @@ img {
   opacity: 0.3;
 }
 
-#promo-btn-1:checked ~ .slider-controls label[for="promo-btn-1"],
-#promo-btn-2:checked ~ .slider-controls label[for="promo-btn-2"],
-#promo-btn-3:checked ~ .slider-controls label[for="promo-btn-3"] {
+#promo-btn-1:checked ~ .slider-controls label.slider-dot[for="promo-btn-1"],
+#promo-btn-2:checked ~ .slider-controls label.slider-dot[for="promo-btn-2"],
+#promo-btn-3:checked ~ .slider-controls label.slider-dot[for="promo-btn-3"] {
   opacity: 1;
 }
 
@@ -512,8 +513,6 @@ img {
   position: absolute;
   top: -35px;
   right: 60px;
-  width: ;
-  height: ;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -756,44 +755,7 @@ img {
   border-right: 8px solid #000000;
 }
 
-.services-controls .btn {
-/*  display: block;*/
-  margin-bottom: 20px;
-  width: 110px;
-  text-align: center;
-}
 
-.btn.active::before {
-  display: none;
-}
-
-.services-controls .btn.active,
-.services-controls .btn:active {
-  padding: 12px 0;
-  padding-left: 25px;
-  padding-right: 150px;
-  color: #f0c52e;
-  background-color: #000000;
-  opacity: 1;
-}
-
-.btn.active .services,
-.btn:active .services {
-  color: #f0c52e;
-  background-color: #000000;
-  opacity: 1;
-}
-
-.btn.active:hover,
- {
-  background-color: transparent;
-}
-
-.services {
-  display: block;
-  position: relative;
-  width: 110px;
-}
 /*---------------------------*/
 .services-slider-item {
   position: relative;
@@ -819,11 +781,87 @@ img {
   color: #000000;
 }
 
-.services-slider-item img {
+.services-slider-item:nth-child(1) img {
   position: absolute;
-  top: 50px;
+  bottom: 9px;
   left: 550px;
 }
+
+.services-slider-item:nth-child(2) img {
+  position: absolute;
+  bottom: 3px;
+  left: 550px;
+}
+
+.services-slider-item:nth-child(3) img {
+  position: absolute;
+  bottom: 12px;
+  left: 550px;
+}
+
+.service-btn {
+  position: relative;
+  display: block;
+  width: 170px;
+}
+
+.service-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 7px;
+  background-color: #f0c52e;
+  z-index: 1;
+}
+
+.service-btn:hover {
+  background-color: #f0c52e;
+}
+
+.service-btn:active {
+  width: 100%;
+  background-color: #000000;
+}
+
+.service-btn:active .service {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.service-btn:active.service-btn::before {
+  background-color: transparent;
+}
+
+#services-btn-1:checked ~ .services-controls label.service[for="services-btn-1"],
+#services-btn-2:checked ~ .services-controls label.service[for="services-btn-2"],
+#services-btn-3:checked ~ .services-controls label.service[for="services-btn-3"] {
+  border-right: 110px solid #000000;
+  color: #f7e184;
+  background-color: #000000;
+  cursor: auto;
+}
+
+.service {
+  position: relative;
+  display: block;
+  width: 120px;
+  padding: 12px 25px;
+  margin-bottom: 20px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  z-index: 10;
+}
+
 /*---------------CHANGE SLIDE------------------*/
 .services-slider-item {
   display: none;
@@ -927,13 +965,27 @@ img {
 }
 
 .about-us li {
-  margin-left: 30px;
+  position: relative;
+  padding-left: 30px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 2.5em;
   font-weight: 800;
   text-decoration: none;
   color: #000000;
+}
+
+.about-us li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 4px;
+  height: 4px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  opacity: 0.3;
 }
 
 .index-contacts img {
