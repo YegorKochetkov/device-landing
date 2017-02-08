@@ -150,8 +150,8 @@ img {
 }
 
 .main-header .logo {
-  position: relative;
-  display: block;
+  position: absolute;
+  display: inline-block;
   top: -30px;
   margin-left: 60px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -166,11 +166,11 @@ img {
 .search {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 440px;
   margin-right: 95px;
   margin-left: 60px;
-  margin-top: -25px;
+  margin-top: 35px;
 }
 
 .search::before  {
@@ -278,15 +278,17 @@ img {
 
 .main-header .user-block {
   display: inline-block;
-  vertical-align: middle;
-  width: 230px;
-  margin-top: -25px;
-  margin-right: 55px;
+  vertical-align: top;
+/*  width: 230px;*/
+  margin-top: 45px;
+  margin-right: 221px;
 }
 
 .main-header .login {
   position: relative;
-  width: 140px;
+  display: inline-block;
+  vertical-align: top;
+/*  width: 140px;*/
   padding-left: 20px;
 }
 
@@ -302,8 +304,10 @@ img {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
 }
-/*------------УДАЛИТЬ ПО ОКОНЧАНИИ-------------*/
+
 .main-header .logout {
+  display: inline-block;
+  vertical-align: top;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -311,10 +315,11 @@ img {
 .main-header .comparison {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
-  width: 80px;
-  margin-top: -25px;
-  margin-right: 25px;
+  vertical-align: top;
+  margin-top: 45px;
+/*  width: 80px;*/
+/*  margin-top: -25px;*/
+  margin-right: 36px;
   padding-left: 20px;
 }
 
@@ -335,9 +340,9 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 80px;
-  margin-top: -25px;
-  margin-right: 10px;
+  margin-top: 45px;
+/*  width: 80px;*/
+  margin-right: 0;
   padding-left: 20px;
 }
 
@@ -356,7 +361,7 @@ img {
 
 /*---------------MAIN NAVIGATION---------------*/
 .main-navigation {
-  margin-top: 25px;
+  margin-top: 33px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2em;
@@ -404,7 +409,7 @@ img {
   position: absolute;
   left: -60px;
   display: block;
-  height: 146px;
+  height: 143px;
   width: 660px;
   padding-top: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -1083,8 +1088,8 @@ img {
 /*--------------------FOOTER-------------------*/
 /*---------------------------------------------*/
 .main-footer {
-  padding-top: 65px;
-  padding-bottom: 60px;
+/*  padding-top: 65px;*/
+  padding-bottom: 65px;
   color: #ffffff;
   background-color: #464646;
 }
@@ -1098,7 +1103,7 @@ img {
 .main-footer .container::after {
   content: "";
   position: absolute;
-  bottom: 20px;
+  bottom: 13px;
   left: 0;
   width: 100px;
   height: 7px;
@@ -1121,10 +1126,11 @@ img {
 
 .main-footer .logo {
   display: inline-block;
-  vertical-align: top;
-  max-width: 180px;
-  margin-right: 660px;
-  margin-bottom: 10px;
+  vertical-align: middle;
+  margin-top: 55px;
+/*  max-width: 180px;*/
+  margin-right: 673px;
+/*  margin-bottom: 10px;*/
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   line-height: 1.2em;
@@ -1136,10 +1142,11 @@ img {
 .main-footer .login {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  max-width: 80px;
-  margin-right: 60px;
-  margin-bottom: 30px;
+  vertical-align: middle;
+  margin-top: 55px;
+/*  max-width: 80px;*/
+  margin-right: 50px;
+/*  margin-bottom: 30px;*/
   padding-left: 20px;
 }
 
@@ -1148,20 +1155,24 @@ img {
 }
 
 .main-footer .logout {
+  position: relative;
   display: inline-block;
-  vertical-align: top;
-  max-width: 100px;
-  margin-right: 60px;
-  margin-bottom: 30px;
+  vertical-align: middle;
+  margin-top: 55px;
+/*  max-width: 80px;*/
+  margin-right: 50px;
+/*  margin-bottom: 30px;*/
+  padding-left: 20px;
 }
 
 .main-footer .comparison {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  max-width: 80px;
-  margin-right: 41px;
-  margin-bottom: 30px;
+  vertical-align: middle;
+  margin-top: 55px;
+/*  max-width: 80px;*/
+  margin-right: 36px;
+/*  margin-bottom: 30px;*/
   padding-left: 20px;
 }
 
@@ -1172,9 +1183,8 @@ img {
 .main-footer .cart {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  max-width: 80px;
-  margin-bottom: 30px;
+  vertical-align: middle;
+  margin-top: 55px;
   padding-left: 20px;
 }
 
@@ -1185,19 +1195,16 @@ img {
 .main-footer address {
   display: inline-block;
   vertical-align: middle;
-  max-width: 260px;
-  margin-right: 175px;
-  margin-bottom: 40px;
+  margin-top: 16px;
+  margin-right: 163px;
   font-style: normal;
 }
 
 .footer-navigation {
   display: inline-block;
   vertical-align: middle;
-  text-align: center;
-  max-width: 440px;
-  margin-right: 205px;
-  margin-bottom: 40px;
+  margin-top: 16px;
+  margin-right: 173px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2em;
@@ -1209,11 +1216,11 @@ img {
 .footer-navigation a {
   display: inline-block;
   vertical-align: middle;
-  max-width: 150px;
-  margin-right: 20px;
+  margin-right: 33px;
 }
 
 .footer-navigation a:last-of-type {
+  margin-left: 12px;
   margin-right: 0;
 }
 
@@ -1221,8 +1228,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  max-width: 180px;
-  margin-bottom: 60px;
+  margin-top: 16px;
 }
 
 .main-footer address,
@@ -1236,8 +1242,8 @@ img {
 .social-btn {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
-  text-align: center;
+  vertical-align: top;
+  margin-top: 60px;
   margin-right: 15px;
   font-size: 0;
   opacity: 0.3;
@@ -1252,15 +1258,17 @@ a.social-btn.social-btn:active {
 }
 
 .social-btn-fb {
+  display: inline-block;
   width: 39px;
   height: 38px;
-  margin-left: 507px;
+  margin-left: 505px;
   background-position: -5px -186px;
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
 }
 
 .social-btn-inst {
+  display: inline-block;
   width: 39px;
   height: 38px;
   background-position: -5px -278px;
@@ -1269,9 +1277,9 @@ a.social-btn.social-btn:active {
 }
 
 .social-btn-twit {
+  display: inline-block;
   width: 38px;
   height: 38px;
-  margin-right: 473px;
   background-position: -5px -431px;
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
@@ -1279,7 +1287,9 @@ a.social-btn.social-btn:active {
 
 .footer-copyright {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
+  margin-top: 60px;
+  margin-left: 462px;
   font-size: 0;
   width: 27px;
   height: 34px;
