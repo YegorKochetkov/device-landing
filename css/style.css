@@ -737,7 +737,7 @@ img {
 /*------------SERVICES SLIDES IN MAIN----------*/
 .services-slider {
   position: relative;
-  height: 285px;
+  height: 290px;
   margin-bottom: 100px;
   background-color: #e5e5e5;
 }
@@ -755,8 +755,8 @@ img {
 .services-controls {
   float: left;
   width: 280px;
-  padding-top: 75px;
-  padding-bottom: 45px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   border-right: 8px solid #000000;
 }
 
@@ -999,7 +999,9 @@ img {
 }
 /*-----------END OF FEEDBACK IN MAIN-----------*/
 
+/*---------------------------------------------*/
 /*--------MAIN OF CATALOG-MONOPODS.HTML--------*/
+/*---------------------------------------------*/
 .breadcrumbs {
   margin-bottom: 40px;
   /*для наглядности*/
@@ -1128,9 +1130,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-top: 55px;
-/*  max-width: 180px;*/
   margin-right: 673px;
-/*  margin-bottom: 10px;*/
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
   line-height: 1.2em;
@@ -1144,9 +1144,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-top: 55px;
-/*  max-width: 80px;*/
   margin-right: 50px;
-/*  margin-bottom: 30px;*/
   padding-left: 20px;
 }
 
@@ -1159,9 +1157,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-top: 55px;
-/*  max-width: 80px;*/
   margin-right: 50px;
-/*  margin-bottom: 30px;*/
   padding-left: 20px;
 }
 
@@ -1170,9 +1166,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-top: 55px;
-/*  max-width: 80px;*/
   margin-right: 36px;
-/*  margin-bottom: 30px;*/
   padding-left: 20px;
 }
 
@@ -1301,55 +1295,204 @@ a.social-btn.social-btn:active {
 /*----------------END OF FOOTER----------------*/
 /*---------------------------------------------*/
 
-/*всплывающие окна*/
+
+
+/*  всплывающие окна  */
 .write-us {
-  display: none;
+  position: absolute;
+  top: 1160px;
+  left: 50%;
+  display: block;
   box-sizing: border-box;
   width: 960px;
-  height: 559px;
-  padding-top: 80px;
-  padding-bottom: 90px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
+  height: 555px;
+  margin-left: -480px;
+  padding: 90px 100px;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow:
+    -1px 7px 26px -5px rgba(0,0,0,0.63),
+     45px 0px 30px -40px rgba(0,0,0,0.63),
+    -45px 0px 30px -40px rgba(0,0,0,0.63);
+  z-index: 100;
 }
 
+/* close button */
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  color: #000000;
+  background-color: #f7e296;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  background-color: #f0c52e;
+}
+
+.modal-close-btn::before,
+.modal-close-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -1px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+.modal-close-btn::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close-btn:active::before,
+.modal-close-btn:active::after {
+  opacity: 0.3;
+}
+/* end of close button */
+
+.write-us label {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.write-us input {
+  width: 340px;
+  height: 48px;
+  margin-top: 5px;
+  padding-left: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: #000000;
+  background-color: #eaeaea;
+  border: none;
+  outline: none;
+  opacity: 0.4;
+}
+
+.write-us input:hover {
+  opacity: 1.0;
+}
+
+/* НАДО УЗНАТЬ КАК СДЕЛАТЬ КРАСНЫЙ ФОН В НЕЗАПОЛНЕННЫХ ПОЛЯХ
+.write-us input:invalid {
+  background-color: #f6dada;
+}
+*/
+.write-us input:focus {
+  width: 337px;
+  height: 42px;
+  padding-left: 17px;
+  background-color: #ffffff;
+  border: 3px solid #e5e5e5;
+}
+/*-----------------------------------*/
+.write-us input::-webkit-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: rgba(70, 70, 70, 1.0);
+}
+
+.write-us input:-ms-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: rgba(70, 70, 70, 1.0);
+}
+
+.write-us input::-ms-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: rgba(70, 70, 70, 1.0);
+}
+
+.write-us input::-moz-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: rgba(70, 70, 70, 1.0);
+}
+/*---------------------------------------------*/
 .wrap-name {
   float: left;
   width: 360px;
-  margin-left: 100px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
 }
 
 .wrap-mail {
   float: right;
   width: 360px;
-  margin-right: 100px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
 }
 
 .wrap-text {
   width: 760px;
   margin: 0 auto;
-  margin-top: 35px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
-}
+  margin-top: 30px;
+ }
 
 .wrap-text textarea {
-  width: 755px;
+  width: 738px;
+  height: 156px;
+  margin-top: 5px;
+  padding: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.286em;
+  color: rgba(70, 70, 70, 0.4);
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
 }
 
-.write-us .btn {
-  width: 200px;
-  height: 40px;
-  margin-top: 35px;
-  margin-left: 100px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
+.wrap-text textarea:hover {
+  color: rgba(70, 70, 70, 1.0);
+  background-color: #eaeaea;
 }
 
+.wrap-text textarea:focus {
+  width: 732px;
+  height: 156px;
+  padding: 17px;
+  background-color: #ffffff;
+  border: 3px solid #e5e5e5;
+  color: rgba(70, 70, 70, 1.0);
+}
+
+.write-us button[type="submit"] {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.write-us button {
+  position: relative;
+  width: 150px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+}
+/*---------------------------------------------*/
 .popup-map {
   display: none;
   box-sizing: border-box;
