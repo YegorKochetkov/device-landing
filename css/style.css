@@ -133,7 +133,6 @@ img {
   width: 100px;
   height: 7px;
   background-color: #ffffff;
-  background-image:;
 }
 
 .main-header a {
@@ -319,7 +318,7 @@ img {
   margin-top: 45px;
 /*  width: 80px;*/
 /*  margin-top: -25px;*/
-  margin-right: 36px;
+/*  margin-right: 36px;*/
   padding-left: 20px;
 }
 
@@ -337,12 +336,13 @@ img {
 }
 
 .main-header .cart {
+  float: right;
   position: relative;
   display: inline-block;
   vertical-align: middle;
   margin-top: 45px;
 /*  width: 80px;*/
-  margin-right: 0;
+  margin-right: 60px;
   padding-left: 20px;
 }
 
@@ -451,10 +451,11 @@ img {
 }
 
 .main-header .contacts {
+  float: right;
   display: inline-block;
   vertical-align: top;
   width: 120px;
-  margin-right: 10px;
+  margin-right: 60px;
 }
 /*-------------END OF MAIN NAVIGATION----------*/
 
@@ -532,8 +533,6 @@ img {
   position: absolute;
   top: -35px;
   right: 60px;
-  width: ;
-  height: ;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -548,8 +547,6 @@ img {
   position: absolute;
   top: -35px;
   right: 60px;
-  width: ;
-  height: ;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -1105,7 +1102,7 @@ img {
 .main-footer .container::after {
   content: "";
   position: absolute;
-  bottom: 13px;
+  top: 238px;
   left: 0;
   width: 100px;
   height: 7px;
@@ -1175,10 +1172,12 @@ img {
 }
 
 .main-footer .cart {
+  float: right;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 55px;
+  margin-top: 69px;
+/*  margin-right: 36px;*/
   padding-left: 20px;
 }
 
@@ -1219,6 +1218,7 @@ img {
 }
 
 .footer-contacts {
+  float: right;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -1280,6 +1280,7 @@ a.social-btn.social-btn:active {
 }
 
 .footer-copyright {
+  float: right;
   display: inline-block;
   vertical-align: top;
   margin-top: 60px;
@@ -1298,23 +1299,34 @@ a.social-btn.social-btn:active {
 
 
 /*  всплывающие окна  */
-.write-us {
-  position: absolute;
-  top: 1160px;
+.modal-write-us {
+  position: fixed;
+  top: 50%;
   left: 50%;
-  display: block;
+  display: none;
   box-sizing: border-box;
   width: 960px;
   height: 555px;
+  margin-top: -277px;
   margin-left: -480px;
   padding: 90px 100px;
   color: #000000;
   background-color: #ffffff;
   box-shadow:
-    -1px 7px 26px -5px rgba(0,0,0,0.63),
-     45px 0px 30px -40px rgba(0,0,0,0.63),
-    -45px 0px 30px -40px rgba(0,0,0,0.63);
-  z-index: 100;
+      0   10px 25px   0px rgba(0,0,0,0.2),
+     50px  0px 30px -40px rgba(0,0,0,0.4),
+    -50px  0px 30px -40px rgba(0,0,0,0.4);
+  z-index: 30;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* close button */
@@ -1325,6 +1337,8 @@ a.social-btn.social-btn:active {
   width: 55px;
   height: 55px;
   color: #000000;
+  background: none;
+  border: none;
   background-color: #f7e296;
   border-radius: 50%;
   cursor: pointer;
@@ -1362,14 +1376,14 @@ a.social-btn.social-btn:active {
 }
 /* end of close button */
 
-.write-us label {
+.modal-write-us label {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1em;
   font-weight: 800;
 }
 
-.write-us input {
+.modal-write-us input {
   width: 340px;
   height: 48px;
   margin-top: 5px;
@@ -1384,16 +1398,16 @@ a.social-btn.social-btn:active {
   opacity: 0.4;
 }
 
-.write-us input:hover {
+.modal-write-us input:hover {
   opacity: 1.0;
 }
 
 /* НАДО УЗНАТЬ КАК СДЕЛАТЬ КРАСНЫЙ ФОН В НЕЗАПОЛНЕННЫХ ПОЛЯХ
-.write-us input:invalid {
+.modal-write-us input:invalid {
   background-color: #f6dada;
 }
 */
-.write-us input:focus {
+.modal-write-us input:focus {
   width: 337px;
   height: 42px;
   padding-left: 17px;
@@ -1401,28 +1415,28 @@ a.social-btn.social-btn:active {
   border: 3px solid #e5e5e5;
 }
 /*-----------------------------------*/
-.write-us input::-webkit-input-placeholder {
+.modal-write-us input::-webkit-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.286em;
   color: rgba(70, 70, 70, 1.0);
 }
 
-.write-us input:-ms-input-placeholder {
+.modal-write-us input:-ms-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.286em;
   color: rgba(70, 70, 70, 1.0);
 }
 
-.write-us input::-ms-input-placeholder {
+.modal-write-us input::-ms-input-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.286em;
   color: rgba(70, 70, 70, 1.0);
 }
 
-.write-us input::-moz-placeholder {
+.modal-write-us input::-moz-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.286em;
@@ -1473,14 +1487,14 @@ a.social-btn.social-btn:active {
   color: rgba(70, 70, 70, 1.0);
 }
 
-.write-us button[type="submit"] {
+.modal-write-us button[type="submit"] {
   background: none;
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-.write-us button {
+.modal-write-us button {
   position: relative;
   width: 150px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1493,11 +1507,17 @@ a.social-btn.social-btn:active {
   cursor: pointer;
 }
 /*---------------------------------------------*/
-.popup-map {
-  display: none;
+.modal-popup-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: block;
   box-sizing: border-box;
   width: 960px;
   height: 559px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
+  margin-top: -277px;
+  margin-left: -480px;
+  box-shadow:
+      0   10px 25px   0px rgba(0,0,0,0.2);
+  z-index: 30;
 }

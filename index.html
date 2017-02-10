@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <a class="logo">Device</a>
         <form class="search" action="#" method="get">
           <input class="search-field" type="search" name="search-field" placeholder="Поиск по сайту"><!--
@@ -22,7 +22,7 @@
         <a class="comparison" href="#">Сравнить</a>
         <a class="cart" href="#">Корзина</a>
 
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <ul>
             <li class="catalog"><a class="catalog-link" href="#">Каталог товаров</a>
               <ul class="sub-menu">
@@ -172,7 +172,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="services-slider">
         <div class="container">
           <form>
@@ -243,8 +243,8 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="container clearfix">
+    <footer class="main-footer clearfix">
+      <div class="container">
         <a class="logo">Device</a><!--
      --><a class="login" href="#">Войти</a><!--
      --><a class="comparison" href="#">Сравнить</a><!--
@@ -266,7 +266,7 @@
     </footer>
 
     <!-- Модальное окно write us -->
-    <div class="write-us" id="write-us">
+    <div class="modal-write-us" id="write-us">
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="clearfix">
           <div class="wrap-name">
@@ -284,13 +284,14 @@
         </div>
           <div class="btn"><button type="submit">Отправить</button></div>
       </form>
-      <a class="modal-close-btn" href="#"></a>
+      <button class="modal-close-btn" type="button" title="Закрыть"></button>
     </div>
 
     <!-- Модальное окно popup-map -->
-    <div class="popup-map" id="popup-map">
+    <div class="modal-popup-map" id="popup-map">
       <img src="img/map-big.jpg" width="960" height="559">
-      <a class="modal-close-btn" href="#"><img src="#" width="23" height="22" alt="Кнопка закрыть"></a>
+      <button class="modal-close-btn" type="button" title="Закрыть"></button>
     </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
