@@ -59,7 +59,8 @@ body {
   clear: both;
 }
 
-.container {
+.container,
+.container-inner {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
@@ -117,12 +118,17 @@ img {
 /*---------------------------------------------*/
 /*-------------------HEADER--------------------*/
 /*---------------------------------------------*/
-.main-header .container {
+.main-header .container,
+.main-header .container-inner {
   position: relative;
   height: 300px;
   margin-top: 40px;
   color: #000000;
   background-color: #f7e296;
+}
+
+.main-header .container-inner {
+  height: 185px;
 }
 
 .main-header .container::after {
@@ -135,20 +141,21 @@ img {
   background-color: #ffffff;
 }
 
-.main-header a {
+.main-header a[href] {
   color: #000000;
   text-decoration: none;
 }
 
-.main-header a:not(.logo):hover {
+.main-header a[href]:hover {
   opacity: 0.6;
 }
 
-.main-header a:not(.logo):active {
+.main-header a[href]:active {
   opacity: 0.3;
 }
 
-.main-header .logo {
+.main-header .logo,
+.main-header .logo-inner {
   position: absolute;
   display: inline-block;
   top: -30px;
@@ -278,17 +285,18 @@ img {
 .main-header .user-block {
   display: inline-block;
   vertical-align: top;
-/*  width: 230px;*/
   margin-top: 45px;
-  margin-right: 221px;
+  margin-right: 65px;
+  /*для наглядности*/
+  outline: 2px solid greenyellow;
 }
 
 .main-header .login {
   position: relative;
   display: inline-block;
   vertical-align: top;
-/*  width: 140px;*/
   padding-left: 20px;
+  margin-right: 15px;
 }
 
 .login::before {
@@ -307,8 +315,6 @@ img {
 .main-header .logout {
   display: inline-block;
   vertical-align: top;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
 }
 
 .main-header .comparison {
@@ -316,9 +322,6 @@ img {
   display: inline-block;
   vertical-align: top;
   margin-top: 45px;
-/*  width: 80px;*/
-/*  margin-top: -25px;*/
-/*  margin-right: 36px;*/
   padding-left: 20px;
 }
 
@@ -338,10 +341,8 @@ img {
 .main-header .cart {
   float: right;
   position: relative;
-  display: inline-block;
   vertical-align: middle;
   margin-top: 45px;
-/*  width: 80px;*/
   margin-right: 60px;
   padding-left: 20px;
 }
@@ -452,7 +453,6 @@ img {
 
 .main-header .contacts {
   float: right;
-  display: inline-block;
   vertical-align: top;
   width: 120px;
   margin-right: 60px;
@@ -1087,7 +1087,6 @@ img {
 /*--------------------FOOTER-------------------*/
 /*---------------------------------------------*/
 .main-footer {
-/*  padding-top: 65px;*/
   padding-bottom: 65px;
   color: #ffffff;
   background-color: #464646;
@@ -1123,7 +1122,8 @@ img {
 }
 
 
-.main-footer .logo {
+.main-footer .logo,
+.main-footer .logo-inner {
   display: inline-block;
   vertical-align: middle;
   margin-top: 55px;
@@ -1158,6 +1158,19 @@ img {
   padding-left: 20px;
 }
 
+.main-footer .logout::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 13px;
+  height: 12px;
+  background-position: -5px -479px;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+}
+
 .main-footer .comparison {
   position: relative;
   display: inline-block;
@@ -1174,10 +1187,8 @@ img {
 .main-footer .cart {
   float: right;
   position: relative;
-  display: inline-block;
   vertical-align: middle;
   margin-top: 69px;
-/*  margin-right: 36px;*/
   padding-left: 20px;
 }
 
@@ -1219,7 +1230,6 @@ img {
 
 .footer-contacts {
   float: right;
-  display: inline-block;
   vertical-align: middle;
   text-align: center;
   margin-top: 16px;
@@ -1281,7 +1291,6 @@ a.social-btn.social-btn:active {
 
 .footer-copyright {
   float: right;
-  display: inline-block;
   vertical-align: top;
   margin-top: 60px;
   margin-left: 462px;
@@ -1321,6 +1330,7 @@ a.social-btn.social-btn:active {
 
 .modal-overlay {
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   z-index: 25;
@@ -1511,7 +1521,7 @@ a.social-btn.social-btn:active {
   position: fixed;
   top: 50%;
   left: 50%;
-  display: block;
+  display: none;
   box-sizing: border-box;
   width: 960px;
   height: 559px;

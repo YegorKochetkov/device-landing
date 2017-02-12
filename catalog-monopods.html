@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <div class="container clearfix">
-        <a class="logo" href="index.html">Device</a>
+      <div class="container-inner clearfix">
+        <a class="logo-inner" href="index.html">Device</a>
 
-        <form class="search" action="#" method="get">
-          <input type="search" name="search-field" placeholder="Поиск по сайту">
-          <input type="submit" name="search-btn" value="Найти">
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search-field" type="search" name="search-field" placeholder="Поиск по сайту"><!--
+       --><input class="search-btn" type="submit" name="search-btn" value="Найти">
         </form>
 
         <div class="user-block">
@@ -24,18 +25,18 @@
         <a class="cart" href="#">Корзина</a>
 
         <nav class="main-navigation clearfix">
-          <ul class="catalog-list">
-            <li><a href="#">Каталог товаров</a>
-              <ul>
+          <ul>
+            <li class="catalog"><a class="catalog-link" href="#">Каталог товаров</a>
+              <ul class="sub-menu">
                 <li><a href="#">Виртуальная реальность</a></li><!--
-             --><li><a href="catalog-monopods.html">Моноподы для селфи</a></li><!--
+             --><li><a>Моноподы для селфи</a></li><!--
              --><li><a href="#">Экшн-камеры</a>
               </ul>
-              <ul>
+              <ul class="sub-menu">
                 <li><a href="#">Фитнесс-браслеты</a></li><!--
              --><li><a href="#">Умные часы</a>
               </ul>
-              <ul>
+              <ul class="sub-menu">
                 <li><a href="#">Квадрокоптеры</a></li>
               </ul>
             </li>
@@ -138,31 +139,23 @@
 
     <footer class="main-footer">
       <div class="container">
-        <div class="row">
-          <a class="logo" href="index.html">Device</a><!--
-       --><a class="logout" href="#">Выйти</a><!--
-       --><a class="comparison" href="#">Сравнить</a><!--
-       --><a class="cart" href="#">Корзина</a>
-        </div>
-        <div class="row">
-          <address>г. Москва, ул. Строителей, 15</address><!--
-       --><nav class="footer-navigation">
-            <a class="delivery" href="#">Доставка</a><!--
-         --><a class="warranty" href="#">Гарантия</a><!--
-         --><a class="contacts" href="#">Контакты</a>
-          </nav>
-          <div class="footer-contacts">Тел.: +7 (495) 495-95-95</div>
-        </div>
-        <div class="row">
-          <div class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a><!--
-         --><a class="social-btn social-btn-fb" href="#">Фейсбук</a><!--
-         --><a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </div>
-          <div class="footer-copyright">
-            <a href="https://htmlacademy.ru"><img src="#" width="27" height="34" alt="логотип HTML Academy"></a>
-          </div>
-        </div>
+        <a class="logo-inner" href="index.html">Device</a><!--
+     --><a class="logout" href="#">Выйти</a><!--
+     --><a class="comparison" href="#">Сравнить</a><!--
+     --><a class="cart" href="#">Корзина</a>
+
+        <address>г. Москва, ул. Строителей, 15</address><!--
+      --><nav class="footer-navigation">
+           <a class="delivery" href="#">Доставка</a><!--
+        --><a class="warranty" href="#">Гарантия</a><!--
+        --><a class="contacts" href="#">Контакты</a>
+        </nav>
+        <div class="footer-contacts">Тел.: +7 (495) 495-95-95</div>
+
+        <a class="social-btn social-btn-fb" href="#">Вконтакте</a><!--
+     --><a class="social-btn social-btn-inst" href="#">Фейсбук</a><!--
+     --><a class="social-btn social-btn-twit" href="#">Инстаграм</a>
+        <a class="footer-copyright" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
   </body>
