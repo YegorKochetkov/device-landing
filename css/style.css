@@ -658,19 +658,19 @@ img {
 /*---------------END PROMO SLIDES--------------*/
 
 /*---------------CATALOG IN MAIN--------------*/
-.catalog-item {
+.subcatalog {
   float: left;
   width: 160px;
   margin-right: 40px;
   margin-bottom: 185px;
 }
 
-.catalog-item a {
+.subcatalog a {
   color: #000000;
   text-decoration: none;
 }
 
-.catalog-item p {
+.subcatalog p {
   width: 130px;
   margin: 0;
   margin-top: 35px;
@@ -683,7 +683,7 @@ img {
   color: #000000;
 }
 
-.catalog-item:nth-child(2) p {
+.subcatalog:nth-child(2) p {
   width: 110px;
 }
 
@@ -704,29 +704,29 @@ img {
   align-items: flex-end;
 }*/
 
-.catalog-item:hover .item-background {
+.subcatalog:hover .item-background {
   background-color: #f0c52e;
 }
 
-.catalog-item:active img {
+.subcatalog:active img {
   opacity: 0.3;
 }
 
-.catalog-item:active p {
+.subcatalog:active p {
   opacity: 0.3;
 }
 
-.catalog-item img {
+.subcatalog img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.catalog-item:nth-child(2) img {
+.subcatalog:nth-child(2) img {
   transform: translate(-50%, -32%);;
 }
 
-.catalog-item:nth-child(6n) {
+.subcatalog:nth-child(6n) {
   margin-right: 0;
 }
 /*-------------END OF CATALOG IN MAIN----------*/
@@ -999,21 +999,100 @@ img {
 /*---------------------------------------------*/
 /*--------MAIN OF CATALOG-MONOPODS.HTML--------*/
 /*---------------------------------------------*/
+.index-content-title {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-bottom: 35px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+
+}
+
 .breadcrumbs {
-  margin-bottom: 40px;
-  /*для наглядности*/
-  outline: 2px solid mediumspringgreen;
+  display: block;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2.571em;
+  color: #000000;
+}
+
+.breadcrumbs a {
+  display: inline-block;
+  position: relative;
+  margin-right: 40px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  margin-top: -2px;
+  transform: rotate(45deg);
+  width: 4px;
+  height: 4px;
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
 }
 
 .sort {
   margin-bottom: 70px;
 }
 
+.main-inner h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+
+}
+
 .index-content-left {
   float: left;
   width: 330px;
+  margin-left: 100%;
+  background-color: #eeeeee;
   /*для наглядности*/
   outline: 2px solid greenyellow;
+}
+
+.index-content-left h3 {
+  background-color: #dcdcdc;
+}
+
+
+.filtr-products fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 130px;
+}
+
+.filtr-products legend {
+  width: 100%;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  border-top: 2px solid #000000;
 }
 
 .sort h3 {
@@ -1078,6 +1157,7 @@ img {
   outline: 2px solid greenyellow;
 }
 /*-----END OF MAIN OF CATALOG-MONOPODS.HTML----*/
+
 
 /*---------------------------------------------*/
 /*----------------END OF MAIN------------------*/
