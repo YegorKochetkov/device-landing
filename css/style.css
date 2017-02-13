@@ -1125,6 +1125,8 @@ range-controls .max-price {
   text-align: left;
 }
 /* end filter range */
+
+
 .filter-color legend {
   margin-bottom: 20px;
 }
@@ -1141,7 +1143,8 @@ range-controls .max-price {
   opacity: 0;
 }
 
-.filter-color label {
+.filter-color label,
+.filter-bluetooth label {
   position: relative;
   display: block;
   padding-left: 40px;
@@ -1192,7 +1195,64 @@ range-controls .max-price {
 #pink:checked + label[for="pink"]::after {
   display: block;
 }
+/*--------------------------------------*/
 
+.filter-bluetooth label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 21px;
+  height: 21px;
+  border: 2px solid #c6c6c6;
+  border-radius: 50%;
+}
+
+.filter-bluetooth label::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 8px;
+  transform: translate(0, -50%);
+  width: 5px;
+  height: 5px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-bluetooth label:hover::before {
+  border: 2px solid #bcbcbc;
+}
+
+.filter-bluetooth label:active::before {
+  border: 2px solid #acacac;
+}
+
+/* идиотская логика в макете, уточнить */
+#yes-bluetooth:checked + label:active[for="yes-bluetooth"]::after,
+#no-bluetooth:checked + label:active[for="no-bluetooth"]::after {
+  display: none;
+}
+
+#yes-bluetooth:not(:checked) + label:active[for="yes-bluetooth"]::after,
+#no-bluetooth:not(:checked) + label:active[for="no-bluetooth"]::after {
+  display: block;
+}
+
+#yes-bluetooth:checked + label[for="yes-bluetooth"]::after,
+#no-bluetooth:checked + label[for="no-bluetooth"]::after {
+  display: block;
+}
+
+.filter-products fieldset.filter-bluetooth {
+  margin-bottom: 20px;
+}
+
+.filter-products input[type="submit"] {
+  width: 200px;
+}
 /*--------------------------------------*/
 .sort h3 {
   display: inline-block;
