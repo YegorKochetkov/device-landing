@@ -95,7 +95,7 @@
             </fieldset>
             <fieldset class="filter-bluetooth">
               <legend>Bluetooth</legend>
-              <input type="radio" name="bluetooth" value="yes-bluetooth" id="yes-bluetooth"><label for="yes-bluetooth">Есть</label>
+              <input type="radio" name="bluetooth" value="yes-bluetooth" id="yes-bluetooth" checked><label for="yes-bluetooth">Есть</label>
               <input type="radio" name="bluetooth" value="no-bluetooth" id="no-bluetooth"><label for="no-bluetooth">Нет</label>
             </fieldset>
             <input class="btn" type="submit" name="show" value="Показать">
@@ -104,12 +104,12 @@
 
         <section class="index-content-right">
           <div class="sort">
-            <h3>Сортировка:</h3>
-            <a href="#">По цене</a><!--
+            <h3>Сортировка:</h3><!--
+         --><a class="active" href="#">По цене</a><!--
          --><a href="#">По типу</a><!--
          --><a href="#">По популярности</a><!--
          --><a href="#">По возрастанию</a><!--
-         --><a href="#">По убыванию</a>
+         --><a class="active" href="#">По убыванию</a>
           </div>
           <div class="clearfix">
             <article class="catalog-item">

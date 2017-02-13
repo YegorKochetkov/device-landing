@@ -998,11 +998,8 @@ img {
   border-top: 2px solid #000000;
 }
 
-.sort {
-  margin-bottom: 70px;
-}
-
-.index-content-left h3 {
+.index-content-left h3,
+.index-content-right h3 {
   margin: 0;
   margin-bottom: 70px;
   padding: 25px 0;
@@ -1085,7 +1082,7 @@ img {
 }
 
 .range-controls .toggle:active {
-  
+
   border: 2px solid #ffffff;
   border-radius: 50%;
   background: #7eae29;
@@ -1114,7 +1111,7 @@ range-controls .max-price {
 }
 
 .range-controls input {
-  display: inline;
+  /*display: inline;*/
   width: 60px;
   margin-left: 3px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1254,8 +1251,68 @@ range-controls .max-price {
   width: 200px;
 }
 /*--------------------------------------*/
-.sort h3 {
+/*--------------------------------------*/
+/*--------------------------------------*/
+.sort {
+  position: relative;
+  display: block;
+  color: #000000;
+  background-color: #eeeeee;
+  margin-bottom: 70px;
+}
+
+.sort h3,
+.sort a {
   display: inline-block;
+  vertical-align: baseline;
+  margin: 0;
+  text-decoration: none;
+}
+
+.sort h3 {
+  margin-right: 50px;
+}
+
+.sort a {
+  color: #000000;
+  opacity: 0.3;
+  margin-right: 27px;
+}
+
+.sort a:hover {
+  opacity: 0.6;
+}
+
+.sort a:active {
+  opacity: 1.0;
+}
+.sort a.active {
+  opacity: 1.0;
+}
+
+.sort a:last-child {
+  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  top: 31px;
+  right: 0;
+  margin-right: 0;
+/*  margin-left: 47px;*/
+  border: 9px solid transparent;
+  border-top-color: #000000;
+}
+
+.sort a:nth-last-child(2) {
+  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  top: 23px;
+  right: 0;
+  margin-right: 45px;
+  border: 9px solid transparent;
+  border-bottom-color: #000000;
 }
 
 .index-content-right .catalog-item {
@@ -1263,15 +1320,12 @@ range-controls .max-price {
   vertical-align: top;
   width: 360px;
   margin-right: 40px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
 }
 
 .index-content-right  article:nth-of-type(2n) {
   margin-right: 0;
-  /*для наглядности*/
-  outline: 2px solid cornflowerblue;
 }
+/*---------------------------------*/
 
 .pagination {
   padding-top: 25px;
