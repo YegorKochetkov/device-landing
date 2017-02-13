@@ -59,12 +59,28 @@
 
         <section class="index-content-left">
           <h3>Фильтр:</h3>
-          <form class="filtr-products" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+          <form class="filter-products" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filetr-range">
               <legend>Стоимость</legend>
-              <input type="range" name="cost" value="5000" min="0" max="8000">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min">
+                  <div class="min-price">
+                    от
+                    <input type="text" name="min-price" value="0">
+                  </div>
+                </div>
+                <div class="toggle toggle-max">
+                  <div class="max-price">
+                    до
+                    <input type="text" name="max-price" value="5000">
+                  </div>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-color">
               <legend>Цвет</legend>
               <input type="checkbox" name="color" value="black" id="black"><label for="black">Черный</label>
               <input type="checkbox" name="color" value="white" id="white"><label for="white">Белый</label>
