@@ -1164,6 +1164,19 @@ range-controls .max-price {
   background-color: #dbdbdb;
 }
 
+.filter-color label::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 15px;
+  left: 8px;
+  transform: rotate(-45deg);
+  width: 7px;
+  height: 4px;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
 .filter-color label:hover::before {
   background-color: #cecece;
 }
@@ -1172,6 +1185,15 @@ range-controls .max-price {
   background-color: #c4c4c4;
 }
 
+#black:checked + label[for="black"]::after,
+#white:checked + label[for="white"]::after,
+#blue:checked + label[for="blue"]::after,
+#red:checked + label[for="red"]::after,
+#pink:checked + label[for="pink"]::after {
+  display: block;
+}
+
+/*--------------------------------------*/
 .sort h3 {
   display: inline-block;
 }
