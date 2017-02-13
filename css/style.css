@@ -977,7 +977,7 @@ img {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumbs a::after {
+.breadcrumbs a:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1006,7 +1006,7 @@ img {
 
 .index-content-left {
   float: left;
-  width: 330px;
+  width: 265px;
 
   margin-left: 60px;
   /*для наглядности*/
@@ -1016,6 +1016,7 @@ img {
 .index-content-right {
   float: right;
   width: 760px;
+  margin-left: 70px;
   /*для наглядности*/
   outline: 2px solid greenyellow;
 }
@@ -1029,7 +1030,7 @@ img {
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 130px;
+  /*margin-right: 130px;*/
 }
 
 .filtr-products legend {
@@ -1044,7 +1045,7 @@ img {
 
 .sort h3 {
   display: inline-block;
-  width: 160px;
+  /*width: 160px;*/
 }
 
 .index-content-right .catalog-item {
