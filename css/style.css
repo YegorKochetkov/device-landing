@@ -73,6 +73,10 @@ img {
 
 .btn {
   display: inline-block;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
   padding: 12px 25px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -994,23 +998,22 @@ img {
   margin-bottom: 70px;
 }
 
-.main-inner h3 {
+.index-content-left h3 {
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 25px 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 800;
-
 }
 
 .index-content-left {
   float: left;
   width: 265px;
-
   margin-left: 60px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
 }
 
 .index-content-right {
@@ -1030,17 +1033,27 @@ img {
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 30px;
   /*margin-right: 130px;*/
 }
 
 .filtr-products legend {
-  width: 100%;
+  /*width: 100%;*/
+  padding-top: 10px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2em;
   letter-spacing: 0.01em;
   font-weight: 800;
   border-top: 2px solid #000000;
+}
+
+.filtr-products input[type="checkbox"] {
+  display: block;
+}
+
+.filtr-products input[type="radio"] {
+  display: block;
 }
 
 .sort h3 {
