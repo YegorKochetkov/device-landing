@@ -1022,8 +1022,6 @@ img {
   float: right;
   width: 760px;
   margin-left: 70px;
-  /*для наглядности*/
-  outline: 2px solid greenyellow;
 }
 
 .index-content-left h3 {
@@ -1314,16 +1312,135 @@ range-controls .max-price {
   border: 9px solid transparent;
   border-bottom-color: #000000;
 }
+/*----------------------------------------*/
+.index-content-right  article:nth-of-type(2n) {
+  margin-right: 0;
+}
 
-.index-content-right .catalog-item {
+.catalog-item {
+  position: relative;
   float: left;
   vertical-align: top;
   width: 360px;
   margin-right: 40px;
 }
 
-.index-content-right  article:nth-of-type(2n) {
-  margin-right: 0;
+.item-picture {
+  position: relative;
+  top: 0;
+  height: 0;
+  margin-bottom: 20px;
+  width: 360px;
+  height: 380px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.back-for-item {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 360px;
+  height: 380px;
+  background-color: #efefef;
+  z-index: 1;
+}
+
+.buy-item {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 360px;
+  height: 380px;
+  z-index: 3;
+}
+
+.buy-item:hover .item-picture {
+  opacity: 0.3;
+}
+
+.catalog-item h3 {
+  display: inline-block;
+  width: 260px;
+  padding: 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.catalog-item a {
+  color: #000000;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.catalog-item .price {
+  float: right;
+}
+
+.flag {
+  box-sizing: border-box;
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 22px 0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+.buy-item .btn {
+  position: absolute;
+  opacity: 0;
+  top: 165px;
+  left: 88px;
+  text-transform: uppercase;
+  z-index: 15;
+}
+
+.buy-item .to-compare {
+  position: absolute;
+  opacity: 0;
+  top: 210px;
+  left: 108px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 2.769em;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 15;
+}
+
+.buy-item .to-compare:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.buy-item .to-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.buy-item:hover .btn,
+.buy-item:hover .to-compare {
+  opacity: 1;
+}
+
+.buy-item:hover + img {
+  opacity: 0.3;
+}
+
+.buy-item:hover ~ .flag {
+  opacity: 0.1;
 }
 /*---------------------------------*/
 
