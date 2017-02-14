@@ -147,7 +147,7 @@ img {
 .main-header .logo-inner {
   position: absolute;
   display: inline-block;
-  top: -30px;
+  top: -27px;
   margin-left: 60px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
@@ -165,7 +165,7 @@ img {
   width: 440px;
   margin-right: 95px;
   margin-left: 60px;
-  margin-top: 35px;
+  margin-top: 34px;
 }
 
 .search::before  {
@@ -275,15 +275,15 @@ img {
   display: inline-block;
   vertical-align: top;
   margin-top: 45px;
-  margin-right: 65px;
+  margin-right: 59px;
 }
 
 .main-header .login {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  padding-left: 20px;
-  margin-right: 15px;
+  padding-left: 25px;
+  margin-right: 13px;
 }
 
 .login::before {
@@ -947,7 +947,7 @@ img {
 /*---------------------------------------------*/
 
 .index-content-title {
-  margin-top: 50px;
+  margin-top: 32px;
   margin-left: 60px;
   margin-bottom: 35px;
   font-family: "Gilroy", "Arial", sans-serif;
