@@ -951,23 +951,38 @@ img {
 /*---------------------------------------------*/
 /*--------MAIN OF CATALOG-MONOPODS.HTML--------*/
 /*---------------------------------------------*/
+.main-inner {
+  overflow: hidden;
+}
+
 .left-column {
-  width: 36.3%;
   float: left;
-  min-width: 325px;
+  width: 325px;
+  background-color: #ebebeb;
+  
+  padding-left: 1000%;
+  margin-left: -1000%;
+  
+  padding-bottom: 1000%;
+  margin-bottom: -1000%;
 }
 
 .back-for-left-head {
+  display: inline-block;  
   position: relative;
   background-color: #dbdbdb;
+  
   margin-bottom: 70px;
   height: 70px;
+  
+  padding-left: 1000%;
+  margin-left: -1000%;
 }
 
 .back-for-left-head h3 {
   width: 265px;
-  float: right;
   margin: 26px 0;
+  margin-left: 60px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.2em;
@@ -977,14 +992,17 @@ img {
 }
 
 .back-for-right-head {
+  display: inline-block;
   position: relative;
   background-color: #ebebeb;
   margin-bottom: 70px;
   height: 70px;
+  
+  padding-right: 1000%;
+  margin-right: -1000%;
 }
 
 .back-for-right-head .sort {
-  float: left;
   width: 760px;
   margin: 16px 0;
   margin-left: 70px;
@@ -1007,13 +1025,8 @@ img {
 
 .right-column {
   background-color: #ffffff;
-  width: 63.7%;
   float: left;
-  min-width: 835px;
-}
-
-.back-for-main-inner {
-  background-color: #efefef;
+  width: 835px;
 }
 
 .index-content-title {
@@ -1068,13 +1081,11 @@ img {
 
 .index-content-left {
   position: relative;
-  float: right;
   width: 265px;
   margin-left: 60px;
 }
 
 .index-content-right {
-  float: left;
   width: 760px;
   margin-left: 70px;
 }
@@ -2029,4 +2040,10 @@ a.social-btn.social-btn:active {
   box-shadow:
       0   10px 25px   0px rgba(0,0,0,0.2);
   z-index: 30;
+}
+
+main {
+  position: relative;
+  min-width: 1200px;
+  margin: 0 auto;
 }
