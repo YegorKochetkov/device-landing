@@ -112,6 +112,7 @@ img {
   position: relative;
   height: 300px;
   margin-top: 40px;
+  line-height: 2.4em;
   color: #000000;
   background-color: #f7e296;
 }
@@ -153,6 +154,7 @@ img {
   font-size: 48px;
   line-height: 1.2em;
   font-weight: 800;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #000000;
 }
@@ -163,8 +165,8 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 440px;
-  margin-right: 95px;
-  margin-left: 60px;
+  margin-right: 98px;
+  margin-left: 58px;
   margin-top: 34px;
 }
 
@@ -274,8 +276,9 @@ img {
 .main-header .user-block {
   display: inline-block;
   vertical-align: top;
-  margin-top: 45px;
-  margin-right: 59px;
+  margin-top: 40px;
+  margin-right: 60px;
+/*  line-height: 2.4em;*/
 }
 
 .main-header .login {
@@ -283,7 +286,8 @@ img {
   display: inline-block;
   vertical-align: top;
   padding-left: 25px;
-  margin-right: 13px;
+  margin-right: 15px;
+/*  letter-spacing: 0.02em;*/
 }
 
 .login::before {
@@ -308,8 +312,9 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin-top: 45px;
+  margin-top: 40px;
   padding-left: 20px;
+/*  line-height: 2.4em;*/
 }
 
 .comparison::before {
@@ -329,16 +334,17 @@ img {
   float: right;
   position: relative;
   vertical-align: middle;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-right: 60px;
   padding-left: 20px;
+/*  line-height: 2.4em;*/
 }
 
 .cart::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -2px;
   transform: translate(0, -50%);
   width: 12px;
   height: 12px;
@@ -380,7 +386,7 @@ img {
   content: "";
   position: absolute;
   top: 2px;
-  left: 235px;
+  left: 230px;
   width: 16px;
   height: 16px;
   background-position: -5px -343px;
@@ -945,23 +951,86 @@ img {
 /*---------------------------------------------*/
 /*--------MAIN OF CATALOG-MONOPODS.HTML--------*/
 /*---------------------------------------------*/
+.left-column {
+  width: 36.3%;
+  float: left;
+  min-width: 325px;
+}
+
+.back-for-left-head {
+  position: relative;
+  background-color: #dbdbdb;
+  margin-bottom: 70px;
+  height: 70px;
+}
+
+.back-for-left-head h3 {
+  width: 265px;
+  float: right;
+  margin: 26px 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.back-for-right-head {
+  position: relative;
+  background-color: #ebebeb;
+  margin-bottom: 70px;
+  height: 70px;
+}
+
+.back-for-right-head .sort {
+  float: left;
+  width: 760px;
+  margin: 16px 0;
+  margin-left: 70px;
+  position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 2.857em;
+  letter-spacing: 0.01;
+  color: #000000;
+}
+
+.sort h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.right-column {
+  background-color: #ffffff;
+  width: 63.7%;
+  float: left;
+  min-width: 835px;
+}
+
+.back-for-main-inner {
+  background-color: #efefef;
+}
 
 .index-content-title {
-  margin-top: 32px;
+  margin-top: 35px;
   margin-left: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 13px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 47px;
   line-height: 1.2em;
   letter-spacing: 0.01em;
   font-weight: 800;
-
 }
 
 .breadcrumbs {
   display: block;
   margin-left: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 41px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 2.571em;
@@ -971,7 +1040,7 @@ img {
 .breadcrumbs a {
   display: inline-block;
   position: relative;
-  margin-right: 40px;
+  margin-right: 37px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
@@ -997,35 +1066,17 @@ img {
   border-top: 2px solid #000000;
 }
 
-.index-content-left h3,
-.index-content-right h3 {
-  margin: 0;
-  margin-bottom: 70px;
-  padding: 25px 0;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.2em;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
 .index-content-left {
   position: relative;
-  float: left;
+  float: right;
   width: 265px;
   margin-left: 60px;
-/*  background-color: #eeeeee;*/
 }
 
 .index-content-right {
-  float: right;
+  float: left;
   width: 760px;
   margin-left: 70px;
-}
-
-.index-content-left h3 {
-  background-color: #dcdcdc;
 }
 
 .filter-products fieldset {
@@ -1037,8 +1088,8 @@ img {
 
 .filter-products legend {
   width: 200px;
-  padding-top: 10px;
-  margin-bottom: 40px;
+  padding-top: 11px;
+  margin-bottom: 37px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2em;
@@ -1051,8 +1102,7 @@ img {
 /* -----  filter range ------  */
 .range-controls {
   position: relative;
-/*  padding-top: 40px;*/
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   width: 200px;
 }
 
@@ -1071,8 +1121,8 @@ img {
   position: absolute;
   top: -7px;
   left: 0px;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   cursor: pointer;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -1080,7 +1130,6 @@ img {
 }
 
 .range-controls .toggle:active {
-
   border: 2px solid #ffffff;
   border-radius: 50%;
   background: #7eae29;
@@ -1088,7 +1137,7 @@ img {
 }
 
 .range-controls .toggle-min {
-  left: 0;
+  left: -2px;
 }
 
 .range-controls .toggle-max {
@@ -1100,16 +1149,16 @@ img {
   position: absolute;
   top: 15px;
   font-size: 14px;
+  line-height: 1.591em;
   color: rgba(0, 0, 0, 0.2);
   width: 90px;
 }
 
-range-controls .max-price {
-  text-align: right;
+.range-controls .max-price {
+  left: -25px;
 }
 
 .range-controls input {
-  /*display: inline;*/
   width: 60px;
   margin-left: 3px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1123,7 +1172,7 @@ range-controls .max-price {
 
 
 .filter-color legend {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .filter-products input[type="checkbox"] {
@@ -1142,8 +1191,8 @@ range-controls .max-price {
 .filter-bluetooth label {
   position: relative;
   display: block;
-  padding-left: 40px;
-  margin-bottom: 10px;
+  padding-left: 38px;
+  margin-bottom: 1px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 2.857em;
@@ -1167,7 +1216,7 @@ range-controls .max-price {
   position: absolute;
   display: none;
   top: 15px;
-  left: 8px;
+  left: 7px;
   transform: rotate(-45deg);
   width: 7px;
   height: 4px;
@@ -1191,6 +1240,9 @@ range-controls .max-price {
   display: block;
 }
 /*--------------------------------------*/
+.filter-bluetooth legend {
+  margin-bottom: 20px;
+}
 
 .filter-bluetooth label::before {
   content: "";
@@ -1198,8 +1250,8 @@ range-controls .max-price {
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  width: 21px;
-  height: 21px;
+  width: 19px;
+  height: 19px;
   border: 2px solid #c6c6c6;
   border-radius: 50%;
 }
@@ -1209,7 +1261,7 @@ range-controls .max-price {
   position: absolute;
   display: none;
   top: 50%;
-  left: 8px;
+  left: 7px;
   transform: translate(0, -50%);
   width: 5px;
   height: 5px;
@@ -1225,7 +1277,6 @@ range-controls .max-price {
   border: 2px solid #acacac;
 }
 
-/* идиотская логика в макете, уточнить */
 #yes-bluetooth:checked + label:active[for="yes-bluetooth"]::after,
 #no-bluetooth:checked + label:active[for="no-bluetooth"]::after {
   display: none;
@@ -1242,7 +1293,7 @@ range-controls .max-price {
 }
 
 .filter-products fieldset.filter-bluetooth {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .filter-products input[type="submit"] {
@@ -1251,13 +1302,6 @@ range-controls .max-price {
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
-.sort {
-  position: relative;
-  display: block;
-  color: #000000;
-  background-color: #eeeeee;
-  margin-bottom: 70px;
-}
 
 .sort h3,
 .sort a {
@@ -1268,13 +1312,16 @@ range-controls .max-price {
 }
 
 .sort h3 {
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .sort a {
-  color: #000000;
   opacity: 0.3;
-  margin-right: 27px;
+  margin-right: 28px;
+  font-size: 14px;
+  line-height: 1.286em;
+  letter-spacing: 0;
+  color: #000000;
 }
 
 .sort a:hover {
@@ -1293,10 +1340,9 @@ range-controls .max-price {
   font-size: 0;
   width: 0;
   height: 0;
-  top: 31px;
+  top: 15px;
   right: 0;
   margin-right: 0;
-/*  margin-left: 47px;*/
   border: 9px solid transparent;
   border-top-color: #000000;
 }
@@ -1306,9 +1352,9 @@ range-controls .max-price {
   font-size: 0;
   width: 0;
   height: 0;
-  top: 23px;
+  top: 7px;
   right: 0;
-  margin-right: 45px;
+  margin-right: 42px;
   border: 9px solid transparent;
   border-bottom-color: #000000;
 }
@@ -1323,13 +1369,18 @@ range-controls .max-price {
   vertical-align: top;
   width: 360px;
   margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+.catalog-item:last-child {
+  margin-bottom: 0;
 }
 
 .item-picture {
   position: relative;
   top: 0;
   height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   width: 360px;
   height: 380px;
   z-index: 2;
@@ -1363,11 +1414,13 @@ range-controls .max-price {
   display: inline-block;
   width: 260px;
   padding: 0;
+  margin: 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.2em;
   font-weight: 800;
   letter-spacing: 0.01em;
+  vertical-align: top;
 }
 
 .catalog-item a {
@@ -1378,6 +1431,8 @@ range-controls .max-price {
 
 .catalog-item .price {
   float: right;
+  letter-spacing: 0.05em;
+  margin-top: -5px;
 }
 
 .flag {
@@ -1444,13 +1499,14 @@ range-controls .max-price {
 /*---------------------------------*/
 
 .pagination {
-  margin-bottom: 73px;
+  margin-bottom: 70px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   letter-spacing: 0.2em;
   font-weight: 800;
   text-transform: uppercase;
+  text-align: center;
   background-color: #ebebeb;
 }
 
@@ -1458,7 +1514,7 @@ range-controls .max-price {
   box-sizing: border-box;
   float: left;
   width: 130px;
-  padding: 20px;
+  padding: 25px 20px;
   margin-right: 20px;
   text-align: center;
 }
@@ -1467,7 +1523,7 @@ range-controls .max-price {
   box-sizing: border-box;
   float: right;
   width: 130px;
-  padding: 20px;
+  padding: 25px 20px;
   margin-left: 20px;
   text-align: center;
 }
@@ -1484,9 +1540,10 @@ range-controls .max-price {
 
 .pagination-pages {
   box-sizing: border-box;
-  float: left;
-  width: 460px;
-  padding: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  width: 420px;
+  padding: 25px 20px;
   text-align: center;
 }
 
@@ -1494,20 +1551,13 @@ range-controls .max-price {
   color: #000000;
   background-color: #ebebeb;
   text-decoration: none;
-/*  opacity: 0.3;*/
 }
-
-/*
-.pagination a[href] {
-  opacity: 1.0;
-}
-*/
 
 .pagination-pages a {
   display: inline-block;
   width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  height: 15px;
+  margin: 0 10px;
 }
 
 .pagination-pages a[href] {
@@ -1525,9 +1575,6 @@ range-controls .max-price {
 .pagination-pages a {
   opacity: 1.0;
 }
-
-
-
 
 /*-----END OF MAIN OF CATALOG-MONOPODS.HTML----*/
 
@@ -1556,7 +1603,7 @@ range-controls .max-price {
   position: absolute;
   top: 238px;
   left: 0;
-  width: 100px;
+  width: 80px;
   height: 7px;
   background-color: #f7e184;
 }
@@ -1579,7 +1626,7 @@ range-controls .max-price {
 .main-footer .logo-inner {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 55px;
+  margin-top: 50px;
   margin-right: 673px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 48px;
@@ -1606,7 +1653,7 @@ range-controls .max-price {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 55px;
+  margin-top: 50px;
   margin-right: 50px;
   padding-left: 20px;
 }
@@ -1628,7 +1675,7 @@ range-controls .max-price {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 55px;
+  margin-top: 50px;
   padding-left: 20px;
 }
 
@@ -1640,7 +1687,7 @@ range-controls .max-price {
   float: right;
   position: relative;
   vertical-align: middle;
-  margin-top: 69px;
+  margin-top: 63px;
   padding-left: 20px;
 }
 
@@ -1651,7 +1698,7 @@ range-controls .max-price {
 .main-footer address {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 16px;
+  margin-top: 25px;
   margin-right: 163px;
   font-style: normal;
 }
@@ -1659,7 +1706,7 @@ range-controls .max-price {
 .footer-navigation {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 16px;
+  margin-top: 25px;
   margin-right: 173px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -1684,7 +1731,7 @@ range-controls .max-price {
   float: right;
   vertical-align: middle;
   text-align: center;
-  margin-top: 16px;
+  margin-top: 25px;
 }
 
 .main-footer address,
