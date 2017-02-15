@@ -60,8 +60,6 @@ writeUs.addEventListener("click", function(event) {
     mailWriteUs.value = storageMail;
     textWriteUs.focus();
   }
-
-
 });
 
 writeUsClose.addEventListener("click", function(event) {
@@ -99,5 +97,4 @@ formWriteUs.addEventListener("submit", function(event) {
   } else {
     localStorage.setItem("email", mailWriteUs.value);
   }
-
 });

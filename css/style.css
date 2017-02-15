@@ -476,7 +476,7 @@ img {
 .promo-slider .slider-controls {
   position: absolute;
   display: inline-block;
-  top: 320px;
+  top: 325px;
   left: 995px;
   width: 160px;
   height: 20px;
@@ -511,7 +511,7 @@ img {
   content: "01";
   position: absolute;
   top: -35px;
-  right: 60px;
+  right: 45px;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -525,7 +525,7 @@ img {
   content: "02";
   position: absolute;
   top: -35px;
-  right: 60px;
+  right: 45px;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -539,7 +539,7 @@ img {
   content: "03";
   position: absolute;
   top: -35px;
-  right: 60px;
+  right: 45px;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
@@ -560,7 +560,7 @@ img {
 }
 
 .promo-slider p {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .desc dd,
@@ -572,7 +572,7 @@ img {
 .desc {
   margin: 0;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .promo-slider dd {
@@ -606,7 +606,7 @@ img {
   float: left;
   width: 560px;
   margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 37px;
   z-index: 8;
 }
 
@@ -654,6 +654,7 @@ img {
 .subcatalog {
   float: left;
   width: 160px;
+  margin-top: -5px;
   margin-right: 40px;
   margin-bottom: 185px;
   color: #000000;
@@ -742,7 +743,7 @@ img {
 .services-slider-item {
   position: relative;
   float: right;
-  width: 800px;
+  width: 750px;
   overflow: hidden;
 }
 
@@ -766,19 +767,19 @@ img {
 .services-slider-item:nth-child(1) img {
   position: absolute;
   bottom: 9px;
-  left: 550px;
+  right: 67px;
 }
 
 .services-slider-item:nth-child(2) img {
   position: absolute;
-  bottom: 3px;
-  left: 550px;
+  bottom: 5px;
+  right: 46px;
 }
 
 .services-slider-item:nth-child(3) img {
   position: absolute;
   bottom: 12px;
-  left: 550px;
+  right: 70px;
 }
 
 .services-controls .btn:active {
@@ -839,9 +840,9 @@ img {
 
 /*-------------PROMO BRAND IN MAIN-------------*/
 .promo-brand {
-
   vertical-align: top;
-  margin-bottom: 90px;
+  margin-top: -5px;
+  margin-bottom: 83px;
 }
 
 .promo-brand a {
@@ -926,7 +927,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 66px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   list-style: none;
 }
 
@@ -956,7 +957,7 @@ img {
 
 .index-contacts img {
   margin-top: 10px;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 }
 /*-----------END OF FEEDBACK IN MAIN-----------*/
 
