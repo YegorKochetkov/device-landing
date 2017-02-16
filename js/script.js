@@ -1,3 +1,5 @@
+'use strict';
+
 var mapOpen = document.querySelector(".js-open-map");
 
 var mapPopup = document.querySelector(".modal-popup-map");
@@ -5,19 +7,19 @@ var mapClose = mapPopup.querySelector(".modal-close-btn");
 
 var modalOverlay = document.querySelector(".modal-overlay");
 
-mapOpen.addEventListener("click", function(event) {
+mapOpen.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.add("modal-content-show");
   modalOverlay.classList.add("modal-content-show");
 });
 
-mapClose.addEventListener("click", function(event) {
+mapClose.addEventListener("click", function (event) {
   event.preventDefault();
   mapPopup.classList.remove("modal-content-show");
   modalOverlay.classList.remove("modal-content-show");
 });
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (mapPopup.classList.contains("modal-content-show")) {
       mapPopup.classList.remove("modal-content-show");
@@ -42,7 +44,7 @@ if (window.localStorage) {
 }
 
 
-writeUs.addEventListener("click", function(event) {
+writeUs.addEventListener("click", function (event) {
   event.preventDefault();
 
   writeUsPopup.classList.add("modal-content-show");
@@ -62,14 +64,14 @@ writeUs.addEventListener("click", function(event) {
   }
 });
 
-writeUsClose.addEventListener("click", function(event) {
+writeUsClose.addEventListener("click", function (event) {
   event.preventDefault();
   writeUsPopup.classList.remove("modal-content-show");
   modalOverlay.classList.remove("modal-content-show");
   loginWriteUs.classList.remove("modal-error");
 });
 
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (writeUsPopup.classList.contains("modal-content-show")) {
       writeUsPopup.classList.remove("modal-content-show");
@@ -79,7 +81,7 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
-formWriteUs.addEventListener("submit", function(event) {
+formWriteUs.addEventListener("submit", function (event) {
   if (!loginWriteUs.value) {
     event.preventDefault();
     loginWriteUs.classList.remove("modal-error");

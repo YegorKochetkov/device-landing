@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -69,21 +69,21 @@
                     как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a class="item-link btn" href="#">Подробнее</a>
-                <dl class="desc clearfix">
-                  <div class="item-property">
-                    <dd>8,5 м</dd>
-                    <dt>Длина палки</dt>
-                  </div>
-                  <div class="item-property">
-                    <dd>5 кг</dd>
-                    <dt>Вес палки</dt>
-                  </div>
-                  <div class="item-property">
-                    <dd>Карбон</dd>
-                    <dt>Материал</dt>
-                  </div>
-                </dl>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="desc clearfix">
+                  <dl class="item-property">
+                    <dt>8,5 м</dt>
+                    <dd>Длина палки</dd>
+                  </dl>
+                  <dl class="item-property">
+                    <dt>5 кг</dt>
+                    <dd>Вес палки</dd>
+                  </dl>
+                  <dl class="item-property">
+                    <dt>Карбон</dt>
+                    <dd>Материал</dd>
+                  </dl>
+                </div>
               </div>
             </article>
 
@@ -95,13 +95,13 @@
                 <h2>Худеем<br>
                     правильно!</h2>
                 <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="item-link btn" href="#">Подробнее</a>
-                <dl class="desc clearfix">
-                  <div class="item-property">
-                    <dd>48 часов</dd>
-                    <dt>Без подзарядки</dt>
-                  </div>
-                </dl>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="desc clearfix">
+                  <dl class="item-property">
+                    <dt>48 часов</dt>
+                    <dd>Без подзарядки</dd>
+                  </dl>
+                </div>
               </div>
             </article>
 
@@ -113,17 +113,17 @@
                 <h2>Порхает как бабочка,<br>
                     жалит как пчела!</h2>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="item-link btn" href="#">Подробнее</a>
-                <dl class="desc clearfix">
-                  <div class="item-property">
-                    <dd>800 м</dd>
-                    <dt>Дальность полета</dt>
-                  </div>
-                  <div class="item-property">
-                    <dd>50 м</dd>
-                    <dt>Радиус поражения</dt>
-                  </div>
-                </dl>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="desc clearfix">
+                  <dl class="item-property">
+                    <dt>800 м</dt>
+                    <dd>Дальность полета</dd>
+                  </dl>
+                  <dl class="item-property">
+                    <dt>50 м</dt>
+                    <dd>Радиус поражения</dd>
+                  </dl>
+                </div>
               </div>
             </article>
           </div>
@@ -190,21 +190,21 @@
               <article class="services-slider-item">
                 <h2>Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                   Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 <img src="img/delivery.png" width="136" height="164" alt="Курьер">
               </article>
 
               <article class="services-slider-item">
                 <h2>Гарантия</h2>
                 <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                  Товар, не дом, конечно же.</p>
+                   Товар, не дом, конечно же.</p>
                 <img src="img/warranty.png" width="171" height="195" alt="Звонок в сервис">
               </article>
 
               <article class="services-slider-item">
                 <h2>Кредит</h2>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
-                  Выгодные для нашего банка, разумеется.</p>
+                   Выгодные для нашего банка, разумеется.</p>
                 <img src="img/credit.png" width="156" height="188" alt="Кредитная карта">
               </article>
             </div>
@@ -296,7 +296,7 @@
 
         <div class="wrap-text">
           <label for="email-text">Текст письма:<br></label>
-          <textarea name="email-text" id="email-text" cols="30" rows="10">В свободной форме</textarea>
+          <textarea name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </div>
         <button class="btn" type="submit">Отправить</button>
       </form>
@@ -305,11 +305,11 @@
 
     <!-- Модальное окно popup-map -->
     <div class="modal-popup-map" id="popup-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.8388877503783!2d30.274960849395747!3d59.98458198949285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469636a7eb54b9ab%3A0x59ecf542d2f011ed!2z0YPQuy4g0KHQsNCy0YPRiNC60LjQvdCwLCA0Mywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzE4Mw!5e0!3m2!1sru!2sru!4v1487150609797" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.8388877503783!2d30.274960849395747!3d59.98458198949285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469636a7eb54b9ab%3A0x59ecf542d2f011ed!2z0YPQuy4g0KHQsNCy0YPRiNC60LjQvdCwLCA0Mywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzE4Mw!5e0!3m2!1sru!2sru!4v1487150609797" width="960" height="560" style="border:0" allowfullscreen></iframe>
       <button class="modal-close-btn" type="button" title="Закрыть"></button>
     </div>
     <div class="modal-overlay"></div>
 
-    <script src="js/modal.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
