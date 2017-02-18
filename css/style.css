@@ -95,10 +95,10 @@ img {
   background: none;
   color: #000000;
   background-image: linear-gradient(
-    rgba(255, 255, 255, 0.0) 42%,
-    #f0c52e 38%,
-    #f0c52e 58%,
-    rgba(255, 255, 255, 0.0) 58%);
+    transparent 40%,
+    #f0c52e 40%,
+    #f0c52e 60%,
+    transparent 60%);
   vertical-align: top;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@ img {
 .main-header .container-inner {
   position: relative;
   
-  height: 300px;
+  min-height: 300px;
   margin-top: 40px;
   
   line-height: 2.4;
@@ -369,9 +369,9 @@ img {
 .main-header .cart {
   position: relative;
   
-  float: right;
+/*  float: right;*/
   margin-top: 40px;
-  margin-right: 60px;
+/*  margin-right: 60px;*/
   padding-left: 20px;
   vertical-align: middle;
 }
@@ -489,9 +489,9 @@ img {
 }
 
 .main-header .contacts {
-  float: right;
+/*  float: right;*/
   width: 120px;
-  margin-right: 60px;
+/*  margin-right: 60px;*/
   vertical-align: top;
 }
 /*---------------------------------------------*/
