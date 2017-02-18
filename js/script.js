@@ -93,8 +93,8 @@ formWriteUs.addEventListener("submit", function (event) {
 
   if (!mailWriteUs.value) {
     event.preventDefault();
-    loginWriteUs.classList.remove("modal-error");
-    loginWriteUs.offsetWidht = loginWriteUs.offsetWidth;
+    mailWriteUs.classList.remove("modal-error");
+    mailWriteUs.offsetWidht = mailWriteUs.offsetWidth;
     mailWriteUs.classList.add("modal-error");
   } else {
     localStorage.setItem("email", mailWriteUs.value);
