@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,7 +25,7 @@
 
         <nav class="main-navigation clearfix">
           <ul>
-            <li class="catalog"><a class="catalog-link" href="#">Каталог товаров</a>
+            <li class="catalog"><a href="#">Каталог товаров</a>
               <ul class="sub-menu">
                 <li><a href="#">Виртуальная реальность</a></li><!--
              --><li><a href="catalog-monopods.html">Моноподы для селфи</a></li><!--
@@ -69,21 +69,21 @@
                     как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <div class="btn"><a class="item-link" href="#">Подробнее</a></div>
-                <dl class="desc clearfix">
-                  <div class="item-property">
-                    <dd>8,5 м</dd>
-                    <dt>Длина палки</dt>
-                  </div>
-                  <div class="item-property">
-                    <dd>5 кг</dd>
-                    <dt>Вес палки</dt>
-                  </div>
-                  <div class="item-property">
-                    <dd>Карбон</dd>
-                    <dt>Материал</dt>
-                  </div>
-                </dl>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="desc clearfix">
+                  <dl class="item-property">
+                    <dt>8,5 м</dt>
+                    <dd>Длина палки</dd>
+                  </dl>
+                  <dl class="item-property">
+                    <dt>5 кг</dt>
+                    <dd>Вес палки</dd>
+                  </dl>
+                  <dl class="item-property">
+                    <dt>Карбон</dt>
+                    <dd>Материал</dd>
+                  </dl>
+                </div>
               </div>
             </article>
 
@@ -95,13 +95,13 @@
                 <h2>Худеем<br>
                     правильно!</h2>
                 <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <div class="btn"><a class="item-link" href="#">Подробнее</a></div>
-                <dl class="desc clearfix">
-                  <div class="item-property">
-                    <dd>48 часов</dd>
-                    <dt>Без подзарядки</dt>
-                  </div>
-                </dl>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="desc clearfix">
+                  <dl class="item-property">
+                    <dt>48 часов</dt>
+                    <dd>Без подзарядки</dd>
+                  </dl>
+                </div>
               </div>
             </article>
 
@@ -113,64 +113,64 @@
                 <h2>Порхает как бабочка,<br>
                     жалит как пчела!</h2>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <div class="btn"><a class="item-link" href="#">Подробнее</a></div>
-                <dl class="desc clearfix">
-                  <div class="item-property">
-                    <dd>800 м</dd>
-                    <dt>Дальность полета</dt>
-                  </div>
-                  <div class="item-property">
-                    <dd>50 м</dd>
-                    <dt>Радиус поражения</dt>
-                  </div>
-                </dl>
+                <a class="btn" href="#">Подробнее</a>
+                <div class="desc clearfix">
+                  <dl class="item-property">
+                    <dt>800 м</dt>
+                    <dd>Дальность полета</dd>
+                  </dl>
+                  <dl class="item-property">
+                    <dt>50 м</dt>
+                    <dd>Радиус поражения</dd>
+                  </dl>
+                </div>
               </div>
             </article>
           </div>
         </div>
 
         <div class="clearfix">
-          <div class="subcatalog">
-            <a href="#">
-              <div class="item-background"><img src="img/popular-1.png" width="97" height="55" alt="Очки виртуальной реальности"></div>
-              <p>Виртуальная реальность</p>
-            </a>
-          </div>
+          <a class="subcatalog" href="#">
+            <div class="item-background">
+              <img src="img/popular-1.png" width="97" height="55" alt="Очки виртуальной реальности">
+            </div>
+            <p>Виртуальная реальность</p>
+          </a>
 
-          <div class="subcatalog">
-            <a href="catalog-monopods.html">
-              <div class="item-background"><img src="img/popular-2.png" width="86" height="117" alt="Монопод для селфи"></div>
-              <p>Моноподы для селфи</p>
-            </a>
-          </div>
+          <a class="subcatalog" href="catalog-monopods.html">
+            <div class="item-background">
+              <img src="img/popular-2.png" width="86" height="117" alt="Монопод для селфи">
+            </div>
+            <p>Моноподы для селфи</p>
+          </a>
 
-          <div class="subcatalog">
-            <a href="#">
-              <div class="item-background"><img src="img/popular-3.png" width="71" height="87" alt="Экшн-камера"></div>
-              <p>Экшн-камеры</p>
-            </a>
-          </div>
+          <a class="subcatalog" href="#">
+            <div class="item-background">
+              <img src="img/popular-3.png" width="71" height="87" alt="Экшн-камера">
+            </div>
+            <p>Экшн-камеры</p>
+          </a>
 
-          <div class="subcatalog">
-            <a href="#">
-              <div class="item-background"><img src="img/popular-4.png" width="107" height="65" alt="Фитнесс браслет"></div>
-              <p>Фитнесс браслеты</p>
-            </a>
-          </div>
+          <a class="subcatalog" href="#">
+            <div class="item-background">
+              <img src="img/popular-4.png" width="107" height="65" alt="Фитнесс браслет">
+            </div>
+            <p>Фитнесс браслеты</p>
+          </a>
 
-          <div class="subcatalog">
-            <a href="#">
-              <div class="item-background"><img src="img/popular-5.png" width="56" height="98" alt="Умные часы"></div>
-              <p>Умные часы</p>
-            </a>
-          </div>
+          <a class="subcatalog" href="#">
+            <div class="item-background">
+              <img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
+            </div>
+            <p>Умные часы</p>
+          </a>
 
-          <div class="subcatalog">
-            <a href="#">
-              <div class="item-background"><img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптер"></div>
-              <p>Квадрокоптеры</p>
-            </a>
-          </div>
+          <a class="subcatalog" href="#">
+            <div class="item-background">
+              <img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптер">
+            </div>
+            <p>Квадрокоптеры</p>
+          </a>
         </div>
       </div>
 
@@ -181,30 +181,30 @@
             <input type="radio" id="services-btn-2" name="toggle">
             <input type="radio" id="services-btn-3" name="toggle">
             <div class="services-controls">
-              <div class="service-btn"><label class="service" for="services-btn-1">Доставка</label></div>
-              <div class="service-btn"><label class="service" for="services-btn-2">Гарантия</label></div>
-              <div class="service-btn"><label class="service" for="services-btn-3">Кредит</label></div>
+              <label class="service btn" for="services-btn-1">Доставка</label>
+              <label class="service btn" for="services-btn-2">Гарантия</label>
+              <label class="service btn" for="services-btn-3">Кредит</label>
             </div>
 
             <div class="services-slides clearfix">
               <article class="services-slider-item">
                 <h2>Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                   Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 <img src="img/delivery.png" width="136" height="164" alt="Курьер">
               </article>
 
               <article class="services-slider-item">
                 <h2>Гарантия</h2>
                 <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                  Товар, не дом, конечно же.</p>
+                   Товар, не дом, конечно же.</p>
                 <img src="img/warranty.png" width="171" height="195" alt="Звонок в сервис">
               </article>
 
               <article class="services-slider-item">
                 <h2>Кредит</h2>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
-                  Выгодные для нашего банка, разумеется.</p>
+                   Выгодные для нашего банка, разумеется.</p>
                 <img src="img/credit.png" width="156" height="188" alt="Кредитная карта">
               </article>
             </div>
@@ -214,10 +214,22 @@
 
       <div class="container">
         <div class="promo-brand">
-          <a href="#"><img src="img/logo-1с.jpg" width="260" height="100" alt="logo"></a><!--
-       --><a href="#"><img src="img/logo-2с.jpg" width="260" height="100" alt="logo"></a><!--
-       --><a href="#"><img src="img/logo-3с.jpg" width="260" height="100" alt="logo"></a><!--
-       --><a href="#"><img src="img/logo-4с.jpg" width="260" height="100" alt="logo"></a>
+          <a href="#">
+            <img src="img/logo-1.jpg" width="260" height="100" alt="logo">
+            <img src="img/logo-1с.jpg" width="260" height="100" alt="logo">
+          </a><!--
+       --><a href="#">
+            <img src="img/logo-2.jpg" width="260" height="100" alt="logo">
+            <img src="img/logo-2с.jpg" width="260" height="100" alt="logo">
+          </a><!--
+       --><a href="#">
+            <img src="img/logo-3.jpg" width="260" height="100" alt="logo">
+            <img src="img/logo-3с.jpg" width="260" height="100" alt="logo">
+          </a><!--
+       --><a href="#">
+            <img src="img/logo-4.jpg" width="260" height="100" alt="logo">
+            <img src="img/logo-4с.jpg" width="260" height="100" alt="logo">
+          </a>
         </div>
 
         <div class="clearfix">
@@ -230,15 +242,17 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <div class="btn"><a href="#">Подробнее о нас</a></div>
+            <a class="btn" href="#">Подробнее о нас</a>
           </section>
 
           <section class="index-contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
               Всякое бывает.</p>
-            <a href="#popup-map"><img src="img/map.jpg" width="560" height="222" alt="Схема проезда"></a>
-            <div class="btn"><a href="#write-us">Напишите нам</a></div>
+            <a class="js-open-map" href="#">
+              <img src="img/map.jpg" width="560" height="222" alt="Схема проезда">
+            </a>
+            <a class="js-write-us btn" href="#">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -272,27 +286,30 @@
         <div class="clearfix">
           <div class="wrap-name">
             <label for="client-name">Ваше имя:<br></label>
-            <input type="text" name="name" id="client-name" placeholder="Представьтесь, пожалуйста" required autofocus>
+            <input class="name" type="text" name="name" id="client-name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="wrap-mail">
             <label for="client-email">Ваш e-mail:<br></label>
-            <input type="email" name="email" id="client-email" placeholder="Для отправки ответа" required>
+            <input class="mail" type="email" name="email" id="client-email" placeholder="Для отправки ответа">
           </div>
         </div>
+
         <div class="wrap-text">
           <label for="email-text">Текст письма:<br></label>
-          <textarea name="email-text" id="email-text" cols="30" rows="10">В свободной форме</textarea>
+          <textarea name="email-text" id="email-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         </div>
-          <div class="btn"><button type="submit">Отправить</button></div>
+        <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="modal-close-btn" type="button" title="Закрыть"></button>
     </div>
 
     <!-- Модальное окно popup-map -->
     <div class="modal-popup-map" id="popup-map">
-      <img src="img/map-big.jpg" width="960" height="559">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.8388877503783!2d30.274960849395747!3d59.98458198949285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469636a7eb54b9ab%3A0x59ecf542d2f011ed!2z0YPQuy4g0KHQsNCy0YPRiNC60LjQvdCwLCA0Mywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzE4Mw!5e0!3m2!1sru!2sru!4v1487150609797" width="960" height="560" style="border:0" allowfullscreen></iframe>
       <button class="modal-close-btn" type="button" title="Закрыть"></button>
     </div>
     <div class="modal-overlay"></div>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>
