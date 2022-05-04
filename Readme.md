@@ -1,4 +1,7 @@
 # Личный проект «Девайс»
+Implement landing page according to Figma design - Use semantic HTML, CSS and JS
 
-- [DEMO LINK](https://yegorkochetkov.github.io/device-landing/)
+Desktop only
+
+[DEMO LINK](https://yegorkochetkov.github.io/device-landing/)
 
