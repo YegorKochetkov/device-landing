@@ -1,4 +1,5 @@
-# Личный проект «Девайс»
+# Personal project 'Device'
+
 Implement landing page according to Figma design - Use semantic HTML, CSS and JS
 
 Desktop only
