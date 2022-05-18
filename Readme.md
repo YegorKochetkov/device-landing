@@ -1,8 +1,5 @@
 # Personal project 'Device'
-
-Implement landing page according to Figma design - Use semantic HTML, CSS and JS
-
-Desktop only
-
-[DEMO LINK](https://yegorkochetkov.github.io/device-landing/)
-
+- Implement landing page according to Photoshop design.
+- Technology stack: HTML, CSS, JS.
+- Desktop only.
+- See [DEMO LINK](https://yegorkochetkov.github.io/device-landing/)
